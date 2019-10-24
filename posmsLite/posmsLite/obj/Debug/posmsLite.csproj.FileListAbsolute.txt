@@ -7,3 +7,13 @@ C:\Users\-\source\repos\posmsLite\posmsLite\obj\Debug\posmsLite.csproj.GenerateR
 C:\Users\-\source\repos\posmsLite\posmsLite\obj\Debug\posmsLite.csproj.CoreCompileInputs.cache
 C:\Users\-\source\repos\posmsLite\posmsLite\obj\Debug\posmsLite.exe
 C:\Users\-\source\repos\posmsLite\posmsLite\obj\Debug\posmsLite.pdb
+D:\GIT\POSMS\posmsLite\posmsLite\bin\Debug\posmsLite.exe.config
+D:\GIT\POSMS\posmsLite\posmsLite\bin\Debug\posmsLite.exe
+D:\GIT\POSMS\posmsLite\posmsLite\bin\Debug\posmsLite.pdb
+D:\GIT\POSMS\posmsLite\posmsLite\obj\Debug\posmsLite.csprojAssemblyReference.cache
+D:\GIT\POSMS\posmsLite\posmsLite\obj\Debug\posmsLite.Form1.resources
+D:\GIT\POSMS\posmsLite\posmsLite\obj\Debug\posmsLite.Properties.Resources.resources
+D:\GIT\POSMS\posmsLite\posmsLite\obj\Debug\posmsLite.csproj.GenerateResource.cache
+D:\GIT\POSMS\posmsLite\posmsLite\obj\Debug\posmsLite.csproj.CoreCompileInputs.cache
+D:\GIT\POSMS\posmsLite\posmsLite\obj\Debug\posmsLite.exe
+D:\GIT\POSMS\posmsLite\posmsLite\obj\Debug\posmsLite.pdb

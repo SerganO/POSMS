@@ -28,13 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.CheckText = new System.Windows.Forms.RichTextBox();
+            this.SuspendLayout();
+            // 
+            // CheckText
+            // 
+            this.CheckText.Location = new System.Drawing.Point(12, 12);
+            this.CheckText.Name = "CheckText";
+            this.CheckText.Size = new System.Drawing.Size(776, 426);
+            this.CheckText.TabIndex = 0;
+            this.CheckText.Text = "";
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.CheckText);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.RichTextBox CheckText;
     }
 }
 

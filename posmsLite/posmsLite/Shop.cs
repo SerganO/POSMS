@@ -26,7 +26,16 @@ namespace posmsLite
         public List<ShopGood> Goods { get; set; }
         public List<Order> Orders { get; set; }
 
-
+        public Shop()
+        {
+            Name = "N/A";
+            //Region =;
+            UUID = "";
+            Users = new List<User>();
+            Providers = new List<Provider>();
+            Goods = new List<ShopGood>();
+            Orders = new List<Order>();
+        }
 
         public void Save()
         {
@@ -68,10 +77,36 @@ namespace posmsLite
             fileStream.Close();
         }
 
-        public string Show()
+        public override string ToString()
         {
             string res = "";
+            res += "Name: " + Name + Environment.NewLine;
+            res += "Region: " + Region + Environment.NewLine;
+            res += "UUID: " + UUID + Environment.NewLine;
 
+            res += "Users: " + Environment.NewLine;
+            foreach (User user in Users)
+            {
+                res += user + Environment.NewLine;
+            }
+
+            res += "Providers: " + Environment.NewLine;
+            foreach (Provider provider in Providers)
+            {
+                res += provider + Environment.NewLine;
+            }
+
+            res += "Goods: " + Environment.NewLine;
+            foreach (ShopGood good in Goods)
+            {
+                res += good + Environment.NewLine;
+            }
+
+            res += "Orders: " + Environment.NewLine;
+            foreach (Order order in Orders)
+            {
+                res += order + Environment.NewLine;
+            }
 
 
             return res;

@@ -32,7 +32,7 @@ namespace posmsLite
             shop.Providers.Add(new Provider());
 
             shop.Save();
-
+            CheckText.Text += shop;
 
         }
     }
