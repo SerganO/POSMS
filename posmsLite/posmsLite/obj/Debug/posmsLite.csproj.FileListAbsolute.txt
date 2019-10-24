@@ -1,0 +1,9 @@
+C:\Users\-\source\repos\posmsLite\posmsLite\bin\Debug\posmsLite.exe.config
+C:\Users\-\source\repos\posmsLite\posmsLite\bin\Debug\posmsLite.exe
+C:\Users\-\source\repos\posmsLite\posmsLite\bin\Debug\posmsLite.pdb
+C:\Users\-\source\repos\posmsLite\posmsLite\obj\Debug\posmsLite.csprojAssemblyReference.cache
+C:\Users\-\source\repos\posmsLite\posmsLite\obj\Debug\posmsLite.Properties.Resources.resources
+C:\Users\-\source\repos\posmsLite\posmsLite\obj\Debug\posmsLite.csproj.GenerateResource.cache
+C:\Users\-\source\repos\posmsLite\posmsLite\obj\Debug\posmsLite.csproj.CoreCompileInputs.cache
+C:\Users\-\source\repos\posmsLite\posmsLite\obj\Debug\posmsLite.exe
+C:\Users\-\source\repos\posmsLite\posmsLite\obj\Debug\posmsLite.pdb
