@@ -22,16 +22,16 @@ namespace posmsLite
             string s = "";
             s += "";
 
-            Shop shop = new Shop();
-            shop.Load();
+            Shop shop = Shop.randObject();
+           // shop.Load();
             //shop.Providers = new List<Provider>();
             //shop.Users = new List<User>();
             //shop.Orders = new List<Order>();
             //shop.Goods = new List<ShopGood>();
 
-            shop.Providers.Add(new Provider());
+           // shop.Providers.Add(new Provider());
 
-            shop.Save();
+            //shop.Save();
             CheckText.Text += shop;
 
         }

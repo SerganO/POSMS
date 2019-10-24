@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 
 namespace posmsLite
 {
@@ -14,6 +15,19 @@ namespace posmsLite
         public ProviderGood()
         {
             SellPrice = 0;
+        }
+
+        public new static ProviderGood randObject()
+        {
+            ProviderGood good = new ProviderGood();
+            Good g = Good.randObject();
+
+            Random r = new Random();
+            good.Name = g.Name;
+            good.Count = g.Count;
+            good.SellPrice = (r.Next() % 15000) / 100.0;
+            Thread.Sleep(10);
+            return good;
         }
 
         public override string ToString()

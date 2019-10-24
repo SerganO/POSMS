@@ -5,14 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
+using System.Threading;
 
 namespace posmsLite
 {
     [Serializable]
     public enum Region {
-
-
-
+        LT, LV, UZ, RV, TE, IF, CV, KM, ZT, VN, KV, CK, KR, MK, OD, CR, KS, DP, PL, CN, SM, KH, DN, ZP, LG
     }
 
     [Serializable]
@@ -26,15 +25,50 @@ namespace posmsLite
         public List<ShopGood> Goods { get; set; }
         public List<Order> Orders { get; set; }
 
+        private static string[] randName = {"ATB","SILPO", "Apelmon", "VARUS", "Brusnichka", "TavriaV", "Ashan" };
+
         public Shop()
         {
             Name = "N/A";
-            //Region =;
+            Region = new Region();
             UUID = "";
             Users = new List<User>();
             Providers = new List<Provider>();
             Goods = new List<ShopGood>();
             Orders = new List<Order>();
+        }
+
+        public static Shop randObject()
+        {
+            Shop shop = new Shop();
+            Random r = new Random();
+            shop.Name = randName[r.Next() % randName.Length];
+            int n = r.Next() % 50;
+            for (int i = 0; i <= n; i++)
+            {
+                shop.Goods.Add(ShopGood.randObject());
+            }
+            n = r.Next() % 10 + 1;
+            for (int i = 0; i <= n; i++)
+            {
+                shop.Providers.Add(Provider.randObject());
+            }
+            n = r.Next() % 3 + 2;
+            for (int i = 0; i <= n; i++)
+            {
+                shop.Users.Add(User.randObject());
+            }
+            n = r.Next() % 20 + 2;
+            for (int i = 0; i <= n; i++)
+            {
+                shop.Orders.Add(Order.randObject());
+            }
+            n = r.Next() % 25;
+            shop.Region = (Region)n;
+            shop.UUID = Guid.NewGuid().ToString();
+            shop.UUID = shop.Region.ToString() + shop.UUID;
+            Thread.Sleep(10);
+            return shop;
         }
 
         public void Save()
