@@ -7,6 +7,7 @@ using System.Security.Cryptography;
 
 namespace posmsLite
 {
+    [Serializable]
     class Credentionals
     {
         public string Login { get; }
@@ -31,6 +32,26 @@ namespace posmsLite
                 sb.Append(b.ToString("X2"));
 
             return sb.ToString();
+        }
+
+        public override bool Equals(object obj)
+        {
+            if (obj is Credentionals)
+            {
+                Credentionals a = obj as Credentionals;
+
+
+                return Login == a.Login && Password == a.Password;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public override int GetHashCode()
+        {
+            return Login.Length + Password.Length;
         }
     }
 }

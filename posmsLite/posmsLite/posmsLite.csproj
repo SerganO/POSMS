@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Access.cs" />
+    <Compile Include="AccessBase.cs" />
     <Compile Include="Credentionals.cs" />
     <Compile Include="LoginWindow.cs">
       <SubType>Form</SubType>
@@ -55,6 +56,7 @@
       <DependentUpon>LoginWindow.cs</DependentUpon>
     </Compile>
     <Compile Include="Good.cs" />
+    <Compile Include="MainBase.cs" />
     <Compile Include="MainWindow.cs">
       <SubType>Form</SubType>
     </Compile>

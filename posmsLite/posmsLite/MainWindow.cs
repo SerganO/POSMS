@@ -16,5 +16,15 @@ namespace posmsLite
         {
             InitializeComponent();
         }
+
+        private void Back_to_login_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void MainWindow_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -11,7 +11,6 @@ D:\GIT\POSMS\posmsLite\posmsLite\bin\Debug\posmsLite.exe.config
 D:\GIT\POSMS\posmsLite\posmsLite\bin\Debug\posmsLite.exe
 D:\GIT\POSMS\posmsLite\posmsLite\bin\Debug\posmsLite.pdb
 D:\GIT\POSMS\posmsLite\posmsLite\obj\Debug\posmsLite.csprojAssemblyReference.cache
-D:\GIT\POSMS\posmsLite\posmsLite\obj\Debug\posmsLite.Form1.resources
 D:\GIT\POSMS\posmsLite\posmsLite\obj\Debug\posmsLite.Properties.Resources.resources
 D:\GIT\POSMS\posmsLite\posmsLite\obj\Debug\posmsLite.csproj.GenerateResource.cache
 D:\GIT\POSMS\posmsLite\posmsLite\obj\Debug\posmsLite.csproj.CoreCompileInputs.cache
@@ -30,3 +29,7 @@ D:\Программирование\POSMS\posmsLite\posmsLite\obj\Debug\posmsLit
 D:\Программирование\POSMS\posmsLite\posmsLite\obj\Debug\posmsLite.MainWindow.resources
 D:\Программирование\POSMS\posmsLite\posmsLite\obj\Debug\posmsLite.PriceMonitoringWindow.resources
 D:\Программирование\POSMS\posmsLite\posmsLite\obj\Debug\posmsLite.ShopInfo.resources
+D:\GIT\POSMS\posmsLite\posmsLite\obj\Debug\posmsLite.LoginWindow.resources
+D:\GIT\POSMS\posmsLite\posmsLite\obj\Debug\posmsLite.MainWindow.resources
+D:\GIT\POSMS\posmsLite\posmsLite\obj\Debug\posmsLite.PriceMonitoringWindow.resources
+D:\GIT\POSMS\posmsLite\posmsLite\obj\Debug\posmsLite.ShopInfo.resources
