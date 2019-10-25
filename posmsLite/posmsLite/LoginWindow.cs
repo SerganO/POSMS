@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace posmsLite
 {
-    public partial class Form1 : Form
+    public partial class LoginWindow : Form
     {
-        public Form1()
+        public LoginWindow()
         {
             InitializeComponent();
             Access a = new Access();
@@ -32,7 +32,47 @@ namespace posmsLite
            // shop.Providers.Add(new Provider());
 
             //shop.Save();
-            CheckText.Text += shop;
+            //CheckText.Text += shop;
+
+        }
+
+        private void CheckText_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Login_label_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Password_label_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void or_label_Click(object sender, EventArgs e)
+        {
 
         }
     }

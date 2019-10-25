@@ -17,3 +17,16 @@ D:\GIT\POSMS\posmsLite\posmsLite\obj\Debug\posmsLite.csproj.GenerateResource.cac
 D:\GIT\POSMS\posmsLite\posmsLite\obj\Debug\posmsLite.csproj.CoreCompileInputs.cache
 D:\GIT\POSMS\posmsLite\posmsLite\obj\Debug\posmsLite.exe
 D:\GIT\POSMS\posmsLite\posmsLite\obj\Debug\posmsLite.pdb
+D:\Программирование\POSMS\posmsLite\posmsLite\bin\Debug\posmsLite.exe.config
+D:\Программирование\POSMS\posmsLite\posmsLite\bin\Debug\posmsLite.exe
+D:\Программирование\POSMS\posmsLite\posmsLite\bin\Debug\posmsLite.pdb
+D:\Программирование\POSMS\posmsLite\posmsLite\obj\Debug\posmsLite.csprojAssemblyReference.cache
+D:\Программирование\POSMS\posmsLite\posmsLite\obj\Debug\posmsLite.LoginWindow.resources
+D:\Программирование\POSMS\posmsLite\posmsLite\obj\Debug\posmsLite.Properties.Resources.resources
+D:\Программирование\POSMS\posmsLite\posmsLite\obj\Debug\posmsLite.csproj.GenerateResource.cache
+D:\Программирование\POSMS\posmsLite\posmsLite\obj\Debug\posmsLite.csproj.CoreCompileInputs.cache
+D:\Программирование\POSMS\posmsLite\posmsLite\obj\Debug\posmsLite.exe
+D:\Программирование\POSMS\posmsLite\posmsLite\obj\Debug\posmsLite.pdb
+D:\Программирование\POSMS\posmsLite\posmsLite\obj\Debug\posmsLite.MainWindow.resources
+D:\Программирование\POSMS\posmsLite\posmsLite\obj\Debug\posmsLite.PriceMonitoringWindow.resources
+D:\Программирование\POSMS\posmsLite\posmsLite\obj\Debug\posmsLite.ShopInfo.resources
