@@ -48,6 +48,12 @@
   <ItemGroup>
     <Compile Include="Access.cs" />
     <Compile Include="AccessBase.cs" />
+    <Compile Include="AddToOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddToOrder.Designer.cs">
+      <DependentUpon>AddToOrder.cs</DependentUpon>
+    </Compile>
     <Compile Include="Credentionals.cs" />
     <Compile Include="LoginWindow.cs">
       <SubType>Form</SubType>
@@ -64,6 +70,18 @@
       <DependentUpon>MainWindow.cs</DependentUpon>
     </Compile>
     <Compile Include="Order.cs" />
+    <Compile Include="OrderGoods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderGoods.Designer.cs">
+      <DependentUpon>OrderGoods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Orders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Orders.Designer.cs">
+      <DependentUpon>Orders.cs</DependentUpon>
+    </Compile>
     <Compile Include="PriceMonitoringWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +92,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Provider.cs" />
     <Compile Include="ProviderGood.cs" />
+    <Compile Include="SetPrices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetPrices.Designer.cs">
+      <DependentUpon>SetPrices.cs</DependentUpon>
+    </Compile>
     <Compile Include="Shop.cs" />
     <Compile Include="ShopGood.cs" />
     <Compile Include="ShopInfo.cs">
@@ -83,11 +107,20 @@
       <DependentUpon>ShopInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="User.cs" />
+    <EmbeddedResource Include="AddToOrder.resx">
+      <DependentUpon>AddToOrder.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginWindow.resx">
       <DependentUpon>LoginWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainWindow.resx">
       <DependentUpon>MainWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderGoods.resx">
+      <DependentUpon>OrderGoods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Orders.resx">
+      <DependentUpon>Orders.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PriceMonitoringWindow.resx">
       <DependentUpon>PriceMonitoringWindow.cs</DependentUpon>
@@ -101,6 +134,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SetPrices.resx">
+      <DependentUpon>SetPrices.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ShopInfo.resx">
       <DependentUpon>ShopInfo.cs</DependentUpon>
     </EmbeddedResource>
