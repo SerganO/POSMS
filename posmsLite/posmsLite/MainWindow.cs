@@ -15,6 +15,25 @@ namespace posmsLite
         public MainWindow()
         {
             InitializeComponent();
+            if(LoginManager.isAuthUser)
+            {
+                switch (LoginManager.CurrentUser.Role) {
+                    case User.Roles.Admin:
+                        adminBox.Visible = true;
+                        quartemasterBox.Visible = false;
+                        break;
+                    case User.Roles.Quartemaster:
+                        adminBox.Visible = false;
+                        quartemasterBox.Visible = true;
+                        break;
+                    default:
+                        adminBox.Visible = false;
+                        quartemasterBox.Visible = false;
+                        break;
+
+                }
+
+            }
         }
 
         private void Back_to_login_Click(object sender, EventArgs e)

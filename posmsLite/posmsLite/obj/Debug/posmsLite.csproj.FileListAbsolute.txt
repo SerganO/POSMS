@@ -33,3 +33,7 @@ D:\GIT\POSMS\posmsLite\posmsLite\obj\Debug\posmsLite.LoginWindow.resources
 D:\GIT\POSMS\posmsLite\posmsLite\obj\Debug\posmsLite.MainWindow.resources
 D:\GIT\POSMS\posmsLite\posmsLite\obj\Debug\posmsLite.PriceMonitoringWindow.resources
 D:\GIT\POSMS\posmsLite\posmsLite\obj\Debug\posmsLite.ShopInfo.resources
+D:\GIT\POSMS\posmsLite\posmsLite\obj\Debug\posmsLite.AddToOrder.resources
+D:\GIT\POSMS\posmsLite\posmsLite\obj\Debug\posmsLite.OrderGoods.resources
+D:\GIT\POSMS\posmsLite\posmsLite\obj\Debug\posmsLite.Orders.resources
+D:\GIT\POSMS\posmsLite\posmsLite\obj\Debug\posmsLite.SetPrices.resources

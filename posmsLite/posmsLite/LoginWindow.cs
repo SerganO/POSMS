@@ -95,15 +95,19 @@ namespace posmsLite
             try
             {
                 Credentionals cred = new Credentionals(login, password);
-                var z = AccessBase.AccessDict;
                 Access access = AccessBase.AccessDict[cred];
 
                 Shop shop = MainBase.Shops.Find(x => x.UUID == access.shopUUID);
 
                 if(shop != null)
                 {
-                    MainWindow mainWindow = new MainWindow();
-                    mainWindow.Show();
+                    User user = shop.Users.Find(x => x.UUID == access.userUUID);
+                    if(user != null)
+                    {
+                        LoginManager.loginAs(user, shop);
+                        MainWindow mainWindow = new MainWindow();
+                        mainWindow.Show();
+                    }
                 }
 
             } catch
@@ -114,6 +118,7 @@ namespace posmsLite
 
         private void Sign_in_as_guest_Click(object sender, EventArgs e)
         {
+            LoginManager.loginAsGuest();
             MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
         }

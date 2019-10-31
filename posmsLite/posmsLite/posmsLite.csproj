@@ -55,6 +55,7 @@
       <DependentUpon>AddToOrder.cs</DependentUpon>
     </Compile>
     <Compile Include="Credentionals.cs" />
+    <Compile Include="LoginManager.cs" />
     <Compile Include="LoginWindow.cs">
       <SubType>Form</SubType>
     </Compile>
