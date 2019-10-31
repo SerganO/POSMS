@@ -38,7 +38,6 @@ namespace posmsLite
 
             var shops = MainBase.Shops;
             var access = AccessBase.AccessDict;
-            string h = "";
         }
 
         private void CheckText_TextChanged(object sender, EventArgs e)

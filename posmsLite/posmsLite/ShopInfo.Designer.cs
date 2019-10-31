@@ -63,6 +63,7 @@
             this.List_shop_goods.Location = new System.Drawing.Point(15, 113);
             this.List_shop_goods.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.List_shop_goods.Name = "List_shop_goods";
+            this.List_shop_goods.ReadOnly = true;
             this.List_shop_goods.Size = new System.Drawing.Size(1036, 426);
             this.List_shop_goods.TabIndex = 2;
             // 
