@@ -8,7 +8,7 @@ using System.Threading;
 namespace posmsLite
 {
     [Serializable]
-    class Good
+    public class Good
     {
         public string Name { get; set; }
         public int Count { get; set; }

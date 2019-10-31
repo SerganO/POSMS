@@ -8,7 +8,7 @@ using System.Threading;
 namespace posmsLite
 {
     [Serializable]
-    class Provider
+    public class Provider
     {
         public string Name { get; set; }
         public string UUID { get; set; }

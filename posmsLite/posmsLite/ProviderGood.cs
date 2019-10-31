@@ -8,7 +8,7 @@ using System.Threading;
 namespace posmsLite
 {
     [Serializable]
-    class ProviderGood: Good
+    public class ProviderGood: Good
     {
         public double SellPrice { get; set; }
 

@@ -12,6 +12,10 @@ namespace posmsLite
     class AccessBase
     {
         public static Dictionary<Credentionals, Access> AccessDict = new Dictionary<Credentionals, Access>();
+        public static int Count {
+            get { return AccessDict.Count; }
+        }
+
 
         public static void Save()
         {

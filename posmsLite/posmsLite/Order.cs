@@ -8,15 +8,17 @@ using System.Threading;
 namespace posmsLite
 {
     [Serializable]
-    class Order
+    public class Order
     {
         public List<ProviderGood> goods { get; set; }
         public bool status { get; set; }
+        public string ID { get; set; }
 
         public Order()
         {
             status = false;
             goods = new List<ProviderGood>();
+            ID = Guid.NewGuid().ToString();
         }
 
         public static Order randObject()
@@ -29,6 +31,7 @@ namespace posmsLite
                 order.goods.Add(ProviderGood.randObject());
             }
             order.status = false;
+            order.ID = Guid.NewGuid().ToString();
             Thread.Sleep(10);
             return order;
         }

@@ -12,10 +12,16 @@ namespace posmsLite
     [Serializable]
     public enum Region {
         LT, LV, UZ, RV, TE, IF, CV, KM, ZT, VN, KV, CK, KR, MK, OD, CR, KS, DP, PL, CN, SM, KH, DN, ZP, LG
+
+
     }
 
+   
+
+
+
     [Serializable]
-    class Shop
+    public class Shop
     {
         public string Name { get; set; }
         public Region Region { get; set; }

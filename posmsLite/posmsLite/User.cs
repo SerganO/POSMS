@@ -8,7 +8,7 @@ using System.Threading;
 namespace posmsLite
 {
     [Serializable]
-    class User
+    public class User
     {
         public enum Roles {
             Admin, Quartemaster

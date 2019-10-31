@@ -20,30 +20,25 @@ namespace posmsLite
             MainBase.Load();
             AccessBase.Load();
 
-            //Shop shop = Shop.randObject();
-            //MainBase.Shops.Add(shop);
+            //for (int i = 0; i < 100; i++)
+            //{
 
+            //    Shop shop = Shop.randObject();
+            //    MainBase.Shops.Add(shop);
 
-            //AccessBase.AccessDict.Add(new Credentionals("login1", "password1"), new Access("CR9cc3fc11-66e4-43e6-9c1a-00126920680f", "9e74c46e-4957-4927-af7b-ceee5a8bdcfa"));
-            //AccessBase.AccessDict.Add(new Credentionals("login2", "password2"), new Access("CR9cc3fc11-66e4-43e6-9c1a-00126920680f", "73b53e94-ce4d-465b-8bde-a1e395be6bc8"));
-            //AccessBase.AccessDict.Add(new Credentionals("login3", "password3"), new Access("CR9cc3fc11-66e4-43e6-9c1a-00126920680f", "d75a2db8-7cf0-4ebb-9ebd-b3ae5ed1ac1e"));
-            //AccessBase.AccessDict.Add(new Credentionals("login4", "password4"), new Access("CR9cc3fc11-66e4-43e6-9c1a-00126920680f", "67a86dbc-84a4-475c-8a91-b4843e4bef29"));
-            //AccessBase.AccessDict.Add(new Credentionals("login5", "password5"), new Access("CR9cc3fc11-66e4-43e6-9c1a-00126920680f", "5164383f-2bd0-4949-af64-d29e4affe6c0"));
+            //    foreach (User user in shop.Users)
+            //    {
+            //        AccessBase.AccessDict.Add(new Credentionals("login" + AccessBase.Count, "password" + AccessBase.Count), new Access(shop.UUID, user.UUID));
+            //    }
+
+            //    MainBase.Save();
+            //    AccessBase.Save();
+
+            //}
+
             var shops = MainBase.Shops;
             var access = AccessBase.AccessDict;
-            MainBase.Save();
-            AccessBase.Save();
-           // shop.Load();
-            //shop.Providers = new List<Provider>();
-            //shop.Users = new List<User>();
-            //shop.Orders = new List<Order>();
-            //shop.Goods = new List<ShopGood>();
-
-           // shop.Providers.Add(new Provider());
-
-            //shop.Save();
-            //CheckText.Text += shop;
-
+            string h = "";
         }
 
         private void CheckText_TextChanged(object sender, EventArgs e)
@@ -106,7 +101,7 @@ namespace posmsLite
                     {
                         LoginManager.loginAs(user, shop);
                         MainWindow mainWindow = new MainWindow();
-                        mainWindow.Show();
+                        mainWindow.ShowDialog();
                     }
                 }
 
@@ -120,7 +115,7 @@ namespace posmsLite
         {
             LoginManager.loginAsGuest();
             MainWindow mainWindow = new MainWindow();
-            mainWindow.Show();
+            mainWindow.ShowDialog();
         }
     }
 }

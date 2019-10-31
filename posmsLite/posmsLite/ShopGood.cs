@@ -8,13 +8,13 @@ using System.Threading;
 namespace posmsLite
 {
     [Serializable]
-    class ShopGood: ProviderGood
+    public class ShopGood: ProviderGood
     {
-        public double buyPrice { get; set; }
+        public double BuyPrice { get; set; }
 
         public ShopGood()
         {
-            buyPrice = 0;
+            BuyPrice = 0;
         }
 
         public new static ShopGood randObject()
@@ -26,7 +26,7 @@ namespace posmsLite
             good.Name = g.Name;
             good.Count = g.Count;
             good.SellPrice = g.SellPrice;
-            good.buyPrice = (r.Next() % 10000) / 100.0;
+            good.BuyPrice = (r.Next() % 10000) / 100.0;
             Thread.Sleep(10);
             return good;
         }
@@ -35,7 +35,7 @@ namespace posmsLite
         {
             string res = base.ToString();
 
-            res += "Buy Price: " + buyPrice + Environment.NewLine;
+            res += "Buy Price: " + BuyPrice + Environment.NewLine;
 
             return res;
         }
