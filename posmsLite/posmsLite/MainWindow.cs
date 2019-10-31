@@ -19,16 +19,16 @@ namespace posmsLite
             {
                 switch (LoginManager.CurrentUser.Role) {
                     case User.Roles.Admin:
+                        quartermasterBox.Visible = false;
                         adminBox.Visible = true;
-                        quartemasterBox.Visible = false;
                         break;
                     case User.Roles.Quartemaster:
+                        quartermasterBox.Visible = true;
                         adminBox.Visible = false;
-                        quartemasterBox.Visible = true;
                         break;
                     default:
+                        quartermasterBox.Visible = false;
                         adminBox.Visible = false;
-                        quartemasterBox.Visible = false;
                         break;
 
                 }
