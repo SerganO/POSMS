@@ -52,7 +52,7 @@ namespace posmsLite
 
         private void List_Orders_SelectedIndexChanged(object sender, EventArgs e)
         {
-            List<ProviderGood> orderedGoods = LoginManager.CurrentShop.Orders[List_Orders.SelectedIndex].goods;
+            List<ProviderGood> orderedGoods = currentOrders[List_Orders.SelectedIndex].goods;
             var bindingList = new BindingList<GoodToShow>(Converter.ProviderGoodsToGoodsToShow(orderedGoods));
             var source = new BindingSource(bindingList, null);
             List_goods_order.DataSource = source;
