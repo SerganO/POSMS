@@ -21,6 +21,20 @@ namespace posmsLite
             ID = Guid.NewGuid().ToString();
         }
 
+        public double SummPrice
+        {
+            get
+            {
+                double summ = 0;
+                foreach(ProviderGood good in goods)
+                {
+                    summ += good.SellPrice * good.Count;
+                }
+                return summ;
+            }
+        }
+
+
         public static Order randObject()
         {
             Order order = new Order();

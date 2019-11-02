@@ -101,12 +101,14 @@ namespace posmsLite
 
         private void Order_goods_Click(object sender, EventArgs e)
         {
-
+            OrderGoods orders = new OrderGoods();
+            orders.ShowDialog();
         }
 
         private void Orders_Click(object sender, EventArgs e)
         {
-
+            Orders orders = new Orders();
+            orders.ShowDialog();
         }
 
         private void QShop_Click(object sender, EventArgs e)

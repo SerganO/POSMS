@@ -17,6 +17,13 @@ namespace posmsLite
             SellPrice = 0;
         }
 
+        public ProviderGood(string name, int count, double price)
+        {
+            Name = name;
+            Count = count;
+            SellPrice = price;
+        }
+
         public new static ProviderGood randObject()
         {
             ProviderGood good = new ProviderGood();
@@ -34,6 +41,15 @@ namespace posmsLite
         {
             string res = base.ToString();
             res += "Sell price: " + SellPrice + Environment.NewLine;
+            return res;
+        }
+
+        public string StringForOrderList()
+        {
+            string res = "";
+
+            res += Name + " Price: " + SellPrice;
+
             return res;
         }
     }

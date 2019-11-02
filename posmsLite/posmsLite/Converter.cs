@@ -85,5 +85,16 @@ namespace posmsLite
 
             return goods;
         }
+
+        public static List<GoodToShow> ProviderGoodsToGoodsToShow(List<ProviderGood> providerGoods)
+        {
+            List<GoodToShow> goods = new List<GoodToShow>();
+            foreach (ProviderGood good in providerGoods)
+            {
+                goods.Add(new GoodToShow(good.Name, good.Count, good.SellPrice));
+            }
+
+            return goods;
+        }
     }
 }
