@@ -55,10 +55,14 @@ namespace posmsLite
                 {
                     case DialogResult.Yes:
                         Change_quantity_good.Text = "Change";
+                        Delete_good.Enabled = true;
+                        Add_good.Enabled = true;
                         break;
                     case DialogResult.No:
                         order.goods = reserveData;
                         Change_quantity_good.Text = "Change";
+                        Delete_good.Enabled = true;
+                        Add_good.Enabled = true;
                         break;
                     case DialogResult.Cancel:
                         List_order_goods.Columns["Count"].ReadOnly = !List_order_goods.Columns["Count"].ReadOnly;
@@ -73,6 +77,8 @@ namespace posmsLite
             } else
             {
                 Change_quantity_good.Text = "End Update";
+                Delete_good.Enabled = false;
+                Add_good.Enabled = false;
                 reserveData = new List<ProviderGood>();
                 foreach(ProviderGood good in order.goods)
                 {
