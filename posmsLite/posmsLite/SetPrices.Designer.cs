@@ -39,28 +39,35 @@
             // Back_in_main_window
             // 
             this.Back_in_main_window.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Back_in_main_window.Location = new System.Drawing.Point(711, 11);
+            this.Back_in_main_window.Location = new System.Drawing.Point(948, 14);
+            this.Back_in_main_window.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Back_in_main_window.Name = "Back_in_main_window";
-            this.Back_in_main_window.Size = new System.Drawing.Size(78, 39);
+            this.Back_in_main_window.Size = new System.Drawing.Size(104, 48);
             this.Back_in_main_window.TabIndex = 7;
             this.Back_in_main_window.Text = "Back";
             this.Back_in_main_window.UseVisualStyleBackColor = true;
+            this.Back_in_main_window.Click += new System.EventHandler(this.Back_in_main_window_Click);
             // 
             // List_price_goods
             // 
+            this.List_price_goods.AllowUserToAddRows = false;
+            this.List_price_goods.AllowUserToDeleteRows = false;
             this.List_price_goods.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.List_price_goods.Location = new System.Drawing.Point(12, 94);
+            this.List_price_goods.Location = new System.Drawing.Point(16, 116);
+            this.List_price_goods.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.List_price_goods.Name = "List_price_goods";
-            this.List_price_goods.Size = new System.Drawing.Size(777, 346);
+            this.List_price_goods.Size = new System.Drawing.Size(1036, 426);
             this.List_price_goods.TabIndex = 6;
+            this.List_price_goods.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.List_price_goods_DataError);
             // 
             // Shop_region_info_label
             // 
             this.Shop_region_info_label.AutoSize = true;
             this.Shop_region_info_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Shop_region_info_label.Location = new System.Drawing.Point(16, 67);
+            this.Shop_region_info_label.Location = new System.Drawing.Point(21, 82);
+            this.Shop_region_info_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Shop_region_info_label.Name = "Shop_region_info_label";
-            this.Shop_region_info_label.Size = new System.Drawing.Size(211, 24);
+            this.Shop_region_info_label.Size = new System.Drawing.Size(270, 29);
             this.Shop_region_info_label.TabIndex = 5;
             this.Shop_region_info_label.Text = "Shop region information";
             // 
@@ -68,34 +75,39 @@
             // 
             this.Shop_name_label.AutoSize = true;
             this.Shop_name_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Shop_name_label.Location = new System.Drawing.Point(13, 11);
+            this.Shop_name_label.Location = new System.Drawing.Point(17, 14);
+            this.Shop_name_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Shop_name_label.Name = "Shop_name_label";
-            this.Shop_name_label.Size = new System.Drawing.Size(193, 39);
+            this.Shop_name_label.Size = new System.Drawing.Size(245, 52);
             this.Shop_name_label.TabIndex = 4;
             this.Shop_name_label.Text = "Shop name";
             // 
             // Update_prices
             // 
             this.Update_prices.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Update_prices.Location = new System.Drawing.Point(545, 11);
+            this.Update_prices.Location = new System.Drawing.Point(727, 14);
+            this.Update_prices.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Update_prices.Name = "Update_prices";
-            this.Update_prices.Size = new System.Drawing.Size(90, 39);
+            this.Update_prices.Size = new System.Drawing.Size(120, 48);
             this.Update_prices.TabIndex = 8;
             this.Update_prices.Text = "Update";
             this.Update_prices.UseVisualStyleBackColor = true;
+            this.Update_prices.Click += new System.EventHandler(this.Update_prices_Click);
             // 
             // SetPrices
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.Update_prices);
             this.Controls.Add(this.Back_in_main_window);
             this.Controls.Add(this.List_price_goods);
             this.Controls.Add(this.Shop_region_info_label);
             this.Controls.Add(this.Shop_name_label);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "SetPrices";
             this.Text = "Set prices Window";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SetPrices_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.List_price_goods)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

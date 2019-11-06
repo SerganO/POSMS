@@ -54,6 +54,7 @@
     <Compile Include="AddToOrder.Designer.cs">
       <DependentUpon>AddToOrder.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdminGood.cs" />
     <Compile Include="Converter.cs" />
     <Compile Include="Credentionals.cs" />
     <Compile Include="GoodToShow.cs" />

@@ -44,7 +44,7 @@ namespace posmsLite
             Orders = new List<Order>();
         }
 
-        public static Shop randObject()
+        public static Shop RandObject()
         {
             Shop shop = new Shop();
             Random r = new Random();
@@ -150,6 +150,19 @@ namespace posmsLite
 
 
             return res;
+        }
+
+
+        public void AddProviderGoodToGoods(ProviderGood good)
+        {
+            ShopGood shopGood = new ShopGood
+            {
+                BuyPrice = good.SellPrice,
+                Name = good.Name,
+                Count = good.Count,
+                SellPrice = good.SellPrice
+            };
+            Goods.Add(shopGood);
         }
     }
 

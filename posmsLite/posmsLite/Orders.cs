@@ -39,15 +39,32 @@ namespace posmsLite
 
         private void Confirm_delivery_Click(object sender, EventArgs e)
         {
-            
-            var result = MessageBox.Show("Are you sure you want confirm delivery?", "Agree", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            switch (result)
+            if (LoginManager.CurrentShop.Orders[List_Orders.SelectedIndex].status)
             {
-                case DialogResult.Yes:
-                    LoginManager.CurrentShop.Orders[List_Orders.SelectedIndex].status = true;
-                    break;
+                MessageBox.Show("Order already confirm!");
             }
-            MainBase.Save();
+            else
+            {
+                var result = MessageBox.Show("Are you sure you want confirm delivery?", "Agree", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                switch (result)
+                {
+                    case DialogResult.Yes:
+                        LoginManager.CurrentShop.Orders[List_Orders.SelectedIndex].status = true;
+                        foreach(ProviderGood good in LoginManager.CurrentShop.Orders[List_Orders.SelectedIndex].goods)
+                        {
+                            ShopGood shopGood = LoginManager.CurrentShop.Goods.Find(x => x.equalWithProviderGood(good));
+                            if(shopGood != null)
+                            {
+                                shopGood.Count += good.Count;
+                            } else
+                            {
+                                LoginManager.CurrentShop.AddProviderGoodToGoods(good);
+                            }
+                        }
+                        break;
+                }
+                MainBase.Save();
+            }
         }
 
         private void List_Orders_SelectedIndexChanged(object sender, EventArgs e)

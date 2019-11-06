@@ -119,7 +119,8 @@ namespace posmsLite
 
         private void Set_prices_Click(object sender, EventArgs e)
         {
-
+            SetPrices setPrices = new SetPrices();
+            setPrices.ShowDialog();
         }
 
         private void Shop_Click(object sender, EventArgs e)

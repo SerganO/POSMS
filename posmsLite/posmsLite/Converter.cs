@@ -86,6 +86,17 @@ namespace posmsLite
             return goods;
         }
 
+        public static List<AdminGood> ShopGoodsToAdminGood(List<ShopGood> shopGoods)
+        {
+            List<AdminGood> goods = new List<AdminGood>();
+            foreach (ShopGood good in shopGoods)
+            {
+                goods.Add(new AdminGood{Name = good.Name, Buy = good.BuyPrice, Sell = good.SellPrice, count = good.Count});
+            }
+
+            return goods;
+        }
+
         public static List<GoodToShow> ProviderGoodsToGoodsToShow(List<ProviderGood> providerGoods)
         {
             List<GoodToShow> goods = new List<GoodToShow>();

@@ -39,5 +39,10 @@ namespace posmsLite
 
             return res;
         }
+
+        public bool equalWithProviderGood(ProviderGood good)
+        {
+            return Name == good.Name && BuyPrice == good.SellPrice;
+        }
     }
 }
