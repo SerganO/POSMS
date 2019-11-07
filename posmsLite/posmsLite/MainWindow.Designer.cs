@@ -36,16 +36,16 @@
             this.Price_monitoring = new System.Windows.Forms.Button();
             this.Back_to_login = new System.Windows.Forms.Button();
             this.quartermasterBox = new System.Windows.Forms.GroupBox();
+            this.QShop = new System.Windows.Forms.Button();
             this.Orders = new System.Windows.Forms.Button();
             this.Order_goods = new System.Windows.Forms.Button();
             this.Name_Shop_label = new System.Windows.Forms.Label();
             this.Name_Quarter_label = new System.Windows.Forms.Label();
             this.adminBox = new System.Windows.Forms.GroupBox();
+            this.Shop = new System.Windows.Forms.Button();
             this.Set_prices = new System.Windows.Forms.Button();
             this.Name_Admin_Shop_label = new System.Windows.Forms.Label();
             this.Name_Admin_Label = new System.Windows.Forms.Label();
-            this.Shop = new System.Windows.Forms.Button();
-            this.QShop = new System.Windows.Forms.Button();
             this.quartermasterBox.SuspendLayout();
             this.adminBox.SuspendLayout();
             this.SuspendLayout();
@@ -147,6 +147,7 @@
             this.Price_monitoring.TabIndex = 5;
             this.Price_monitoring.Text = "Price monitoring";
             this.Price_monitoring.UseVisualStyleBackColor = true;
+            this.Price_monitoring.Click += new System.EventHandler(this.Price_monitoring_Click);
             // 
             // Back_to_login
             // 
@@ -177,6 +178,16 @@
             this.quartermasterBox.TabStop = false;
             this.quartermasterBox.Text = "Quartermaster";
             this.quartermasterBox.Visible = false;
+            // 
+            // QShop
+            // 
+            this.QShop.Location = new System.Drawing.Point(7, 186);
+            this.QShop.Name = "QShop";
+            this.QShop.Size = new System.Drawing.Size(212, 40);
+            this.QShop.TabIndex = 4;
+            this.QShop.Text = "Shop";
+            this.QShop.UseVisualStyleBackColor = true;
+            this.QShop.Click += new System.EventHandler(this.QShop_Click);
             // 
             // Orders
             // 
@@ -241,6 +252,16 @@
             this.adminBox.Text = "Admin";
             this.adminBox.Visible = false;
             // 
+            // Shop
+            // 
+            this.Shop.Location = new System.Drawing.Point(7, 140);
+            this.Shop.Name = "Shop";
+            this.Shop.Size = new System.Drawing.Size(212, 40);
+            this.Shop.TabIndex = 3;
+            this.Shop.Text = "Shop";
+            this.Shop.UseVisualStyleBackColor = true;
+            this.Shop.Click += new System.EventHandler(this.Shop_Click);
+            // 
             // Set_prices
             // 
             this.Set_prices.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -274,26 +295,6 @@
             this.Name_Admin_Label.Size = new System.Drawing.Size(138, 25);
             this.Name_Admin_Label.TabIndex = 0;
             this.Name_Admin_Label.Text = "Zybenko M. P.";
-            // 
-            // Shop
-            // 
-            this.Shop.Location = new System.Drawing.Point(7, 140);
-            this.Shop.Name = "Shop";
-            this.Shop.Size = new System.Drawing.Size(212, 40);
-            this.Shop.TabIndex = 3;
-            this.Shop.Text = "Shop";
-            this.Shop.UseVisualStyleBackColor = true;
-            this.Shop.Click += new System.EventHandler(this.Shop_Click);
-            // 
-            // QShop
-            // 
-            this.QShop.Location = new System.Drawing.Point(7, 186);
-            this.QShop.Name = "QShop";
-            this.QShop.Size = new System.Drawing.Size(212, 40);
-            this.QShop.TabIndex = 4;
-            this.QShop.Text = "Shop";
-            this.QShop.UseVisualStyleBackColor = true;
-            this.QShop.Click += new System.EventHandler(this.QShop_Click);
             // 
             // MainWindow
             // 

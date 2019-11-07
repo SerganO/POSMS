@@ -128,5 +128,11 @@ namespace posmsLite
             ShopInfo shopInfoWindow = new ShopInfo(LoginManager.CurrentShop);
             shopInfoWindow.ShowDialog();
         }
+
+        private void Price_monitoring_Click(object sender, EventArgs e)
+        {
+            PriceMonitoringWindow priceMonitoring = new PriceMonitoringWindow();
+            priceMonitoring.ShowDialog();
+        }
     }
 }
