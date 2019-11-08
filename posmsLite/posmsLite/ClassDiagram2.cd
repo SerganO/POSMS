@@ -1,2 +1,191 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram /> 
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="posmsLite.Access" Collapsed="true">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAgAAAAAAAAAAAAIQAAAAAAAAAAAA=</HashCode>
+      <FileName>Access.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="posmsLite.AccessBase" Collapsed="true">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgIgAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AccessBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="posmsLite.AddToOrder" Collapsed="true">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAASCCQQAAgAAACAAEAiAAAAAAJgAAAAEAAACAA=</HashCode>
+      <FileName>AddToOrder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="posmsLite.AdminGood" Collapsed="true">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAARAAAAAQQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AdminGood.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="posmsLite.Converter" Collapsed="true">
+    <Position X="10" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIhAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Converter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="posmsLite.Credentionals" Collapsed="true">
+    <Position X="3" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAIACAAAQQAAAAAA=</HashCode>
+      <FileName>Credentionals.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="posmsLite.Good" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEACAAAAQAAAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>Good.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="posmsLite.GoodToShow" Collapsed="true">
+    <Position X="12" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GoodToShow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="posmsLite.LoginManager" Collapsed="true">
+    <Position X="6.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAIAAAAIAAAAAAwAAAAAAAAAACAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>LoginManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="posmsLite.LoginWindow" Collapsed="true">
+    <Position X="8.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AmBAAAQQACAIBAAAAgCAGAASAAAAAAAAEAQCACIABAA=</HashCode>
+      <FileName>LoginWindow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="posmsLite.MainBase" Collapsed="true">
+    <Position X="10" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgIAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MainBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="posmsLite.MainWindow" Collapsed="true">
+    <Position X="3" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ISEAAwkgAKCAEQRAAUCAAAaCBCSAAiAQhAAAgACABAA=</HashCode>
+      <FileName>MainWindow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="posmsLite.Order" Collapsed="true">
+    <Position X="12" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAgAAAAAAAgAAEACAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Order.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="posmsLite.OrderGoods" Collapsed="true">
+    <Position X="6.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAQACQABQCCgAAEAAAiAABAiAAAFAAAGIAAABAAAAAE=</HashCode>
+      <FileName>OrderGoods.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="posmsLite.Orders" Collapsed="true">
+    <Position X="8.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEQAAAAAACAggAEIQCCEABACAAAAgAAAAAAEAAAARAA=</HashCode>
+      <FileName>Orders.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="posmsLite.PriceMonitoringWindow" Collapsed="true">
+    <Position X="10" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAgACCCgAAAAAACAAAACAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>PriceMonitoringWindow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="posmsLite.Program" Collapsed="true">
+    <Position X="3" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="posmsLite.Provider" Collapsed="true">
+    <Position X="4.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEECAAAAQAAAAAAAAAAAAAAAACACA=</HashCode>
+      <FileName>Provider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="posmsLite.ProviderGood" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQEACAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>ProviderGood.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="posmsLite.SetPrices" Collapsed="true">
+    <Position X="8.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAABAAAGAgAAAgAACSAAADAkCAAAAAAAAAAQBIAAA=</HashCode>
+      <FileName>SetPrices.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="posmsLite.Shop" Collapsed="true">
+    <Position X="3" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAgKAAgAAEAAAEGAAAAAQgAAAAAAAAAAAAAAACACA=</HashCode>
+      <FileName>Shop.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="posmsLite.ShopGood" Collapsed="true">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAEACAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>ShopGood.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="posmsLite.ShopInfo" Collapsed="true">
+    <Position X="4.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAgAAAAAACCAAACAAAAAAAAAQIAAQAAAAA=</HashCode>
+      <FileName>ShopInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="posmsLite.User" Collapsed="true">
+    <Position X="6.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEECAAAAQAAAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="posmsLite.Properties.Resources" Collapsed="true">
+    <Position X="6.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="posmsLite.Properties.Settings" Collapsed="true">
+    <Position X="10" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="posmsLite.Region" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAIQAAAAAAAAAIAAIBgSAAEAKGABQAAIHFAAAAQABA=</HashCode>
+      <FileName>Shop.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

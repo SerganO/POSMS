@@ -73,6 +73,7 @@
     <Compile Include="MainWindow.Designer.cs">
       <DependentUpon>MainWindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="MonitoringGood.cs" />
     <Compile Include="Order.cs" />
     <Compile Include="OrderGoods.cs">
       <SubType>Form</SubType>
@@ -144,6 +145,7 @@
     <EmbeddedResource Include="ShopInfo.resx">
       <DependentUpon>ShopInfo.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="ClassDiagram2.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
