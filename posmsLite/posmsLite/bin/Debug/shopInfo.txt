@@ -7378,3 +7378,288 @@ Khlibodar
 Podolyanochka
 Buvet
 
+251
+Name: ATB
+Region: DN
+UUID: DN5576cef8-7fb1-4d88-873f-d4f8e728395c
+Users: 
+1007 Name: Novak V.V.
+UUID: 156253e0-5f4b-4fde-aa33-6c7051cb0dc7
+Role: Admin
+
+1008 Name: Brinzey O.A.
+UUID: 98bdf554-ca7f-4d85-bc9e-cf9acc5b4aca
+Role: Quartemaster
+
+1009 Name: Sherbak A.S.
+UUID: dbc6488d-62c9-4269-9e1b-e38e4fa8c40f
+Role: Quartemaster
+
+1010 Name: Sherbak A.S.
+UUID: 32d1486e-ebad-447f-bab6-bfe121048f4a
+Role: Quartemaster
+
+Providers: 
+Khlibodar
+Nestle
+
+252
+Name: Ashan
+Region: ZP
+UUID: ZPab89d218-c9db-42c3-bb0c-3d2cb72d8dec
+Users: 
+1011 Name: Brinzey O.A.
+UUID: 842a3ee2-9106-4065-9efd-f29f3d2814ad
+Role: Quartemaster
+
+1012 Name: Sherbak A.S.
+UUID: e5262904-cbcf-4f66-a665-6d9e4d912c85
+Role: Admin
+
+1013 Name: Ostrovetskiy S.V.
+UUID: 52b87746-df55-4ae7-9327-b0a3a3af5de8
+Role: Quartemaster
+
+Providers: 
+Khlibodar
+Obuhiv
+BMK
+BMK
+Buvet
+Nestle
+
+253
+Name: ATB
+Region: KV
+UUID: KVcb44b0a9-3665-4787-9300-74118dc16488
+Users: 
+1014 Name: Brinzey O.A.
+UUID: 10acaf24-b77d-47cf-8980-6291b23e41ca
+Role: Admin
+
+1015 Name: Sherbak A.S.
+UUID: 6779519b-1863-4b12-878a-eaf9c6e3fddc
+Role: Quartemaster
+
+1016 Name: Didyk I.V.
+UUID: 85f29af2-9172-4622-9fc0-8549cd38ae3a
+Role: Admin
+
+Providers: 
+Buvet
+Obuhiv
+Roshen
+Podolyanochka
+BMK
+Khlibodar
+Nestle
+Nestle
+
+254
+Name: SILPO
+Region: MK
+UUID: MKb5abff35-a579-4bde-b597-96cd04246181
+Users: 
+1017 Name: Brinzey O.A.
+UUID: 50ab6273-a696-4434-99f6-8898441cd7d3
+Role: Admin
+
+1018 Name: Sherbak A.S.
+UUID: c8c009d0-3731-4372-9885-58444a77eb1d
+Role: Admin
+
+1019 Name: Sherbak A.S.
+UUID: ae1a2d22-d75f-4ca4-954d-a5a09a36e3f2
+Role: Admin
+
+Providers: 
+BMK
+Nestle
+BMK
+Roshen
+Roshen
+Obuhiv
+Goverla
+Obuhiv
+
+255
+Name: Apelmon
+Region: KS
+UUID: KS54ba5ace-2658-40d2-a530-c8ff2efad12b
+Users: 
+1020 Name: Sherbak A.S.
+UUID: 2bc91b4e-f6de-4dd7-9630-519054f7e4e0
+Role: Admin
+
+1021 Name: Sherbak A.S.
+UUID: 7de4a192-9509-4b6a-9b48-c6c73425c269
+Role: Admin
+
+1022 Name: Didyk I.V.
+UUID: ae9fdedf-7402-4a7e-ad67-d1b6b4fa8ab3
+Role: Admin
+
+1023 Name: Novak V.V.
+UUID: 763e0c4a-6659-4fd5-bf81-b71e0e81c459
+Role: Admin
+
+1024 Name: Novak V.V.
+UUID: 132957e7-9ca6-48d5-883f-141ce28017bb
+Role: Admin
+
+Providers: 
+Podolyanochka
+Nestle
+Buvet
+Buvet
+Goverla
+Obuhiv
+BMK
+BMK
+Buvet
+Podolyanochka
+Roshen
+
+256
+Name: ATB
+Region: RV
+UUID: RVb517c6fe-a561-4788-b2a4-a244e308e01f
+Users: 
+1025 Name: Brinzey O.A.
+UUID: bafa9393-e2e5-479c-ab8a-93528b5fc80f
+Role: Quartemaster
+
+1026 Name: Sherbak A.S.
+UUID: 685a8991-f69a-4527-939e-327cbd0c1eb1
+Role: Admin
+
+1027 Name: Sherbak A.S.
+UUID: 358f96ca-bc92-453b-aa95-a3256ddaaf21
+Role: Admin
+
+1028 Name: Ostrovetskiy S.V.
+UUID: 516b9d3a-e1d3-4213-b0b4-b5a3f37d8b68
+Role: Quartemaster
+
+1029 Name: Novak V.V.
+UUID: bae34021-97e7-4285-b074-8105a041b5dc
+Role: Admin
+
+Providers: 
+Obuhiv
+Khlibodar
+
+257
+Name: Ashan
+Region: LG
+UUID: LGf9869438-615b-4170-a240-1e75d31876dc
+Users: 
+1030 Name: Brinzey O.A.
+UUID: 783953cd-80f5-471c-ad0b-e859ac8dbf02
+Role: Admin
+
+1031 Name: Ostrovetskiy S.V.
+UUID: b5689ca8-62bf-418a-92a5-eb63cb26f78f
+Role: Admin
+
+1032 Name: Didyk I.V.
+UUID: 9abb2ee5-482b-4988-9397-0aaec995c546
+Role: Admin
+
+Providers: 
+Buvet
+Khlibodar
+
+258
+Name: TavriaV
+Region: MK
+UUID: MKe319c761-1f4a-4e69-8e6c-e4f1f9c84ca5
+Users: 
+1033 Name: Brinzey O.A.
+UUID: fe5b2ed3-09c2-4c23-bcd8-9852b5c8e984
+Role: Admin
+
+1034 Name: Brinzey O.A.
+UUID: c49a8409-d91d-405d-8201-5ebd4418a920
+Role: Admin
+
+1035 Name: Sherbak A.S.
+UUID: 8ef61b0d-9dde-43d3-94ee-a59c897361fc
+Role: Quartemaster
+
+1036 Name: Didyk I.V.
+UUID: eb8efc4f-9268-43a9-b5cf-4ea9ee588ee7
+Role: Admin
+
+Providers: 
+Buvet
+Obuhiv
+Obuhiv
+Podolyanochka
+Khlibodar
+Podolyanochka
+BMK
+
+259
+Name: TavriaV
+Region: SM
+UUID: SMb70fe661-ab54-44ba-a0b9-e538cc78a89e
+Users: 
+1037 Name: Ostrovetskiy S.V.
+UUID: a8567511-fded-461a-9091-204f11f7f39e
+Role: Admin
+
+1038 Name: Didyk I.V.
+UUID: f4c70d2d-7280-42d0-972b-879bc9c74c3d
+Role: Quartemaster
+
+1039 Name: Didyk I.V.
+UUID: f56aecfa-103a-4759-8a18-56958a22bbc6
+Role: Quartemaster
+
+1040 Name: Stepanenko O.I.
+UUID: 68be085a-6438-4028-9b00-d74f47b7eaa7
+Role: Admin
+
+Providers: 
+Goverla
+Podolyanochka
+Khlibodar
+Nestle
+Khlibodar
+BMK
+Nestle
+Goverla
+Goverla
+Obuhiv
+
+260
+Name: SILPO
+Region: OD
+UUID: ODc6067ae5-6703-4190-a201-54fd31707688
+Users: 
+1041 Name: Novak V.V.
+UUID: b9bb7fa6-06f0-4f4a-bd04-e1c705178eec
+Role: Quartemaster
+
+1042 Name: Stepanenko O.I.
+UUID: 9c2bc717-4eb0-4ab6-a510-6df705210822
+Role: Quartemaster
+
+1043 Name: Sherbak A.S.
+UUID: 959dcdea-29df-4079-bca6-e9202a1498a2
+Role: Quartemaster
+
+Providers: 
+Podolyanochka
+Podolyanochka
+Khlibodar
+Obuhiv
+BMK
+BMK
+Buvet
+Nestle
+Obuhiv
+Goverla
+Roshen
+
