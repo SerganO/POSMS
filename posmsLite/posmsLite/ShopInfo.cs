@@ -32,5 +32,38 @@ namespace posmsLite
         {
             Close();
         }
+        int selectedCategory = 0;
+
+        private void searchButton_Click(object sender, EventArgs e)
+        {
+            if(selectedCategory==0)
+            {
+                if (shopToShow != null)
+                {
+                    var bindingList = new BindingList<GoodToShow>(Converter.ShopGoodsToGoodsToShow(shopToShow.Goods));
+                    var source = new BindingSource(bindingList, null);
+                    List_shop_goods.DataSource = source;
+                }
+            } else
+            {
+                if (shopToShow != null)
+                {
+                    var goodsToShow = shopToShow.Goods.Where(x => x.Category == (GoodCategory)(selectedCategory - 1)).ToList();
+                    var bindingList = new BindingList<GoodToShow>(Converter.ShopGoodsToGoodsToShow(goodsToShow));
+                    var source = new BindingSource(bindingList, null);
+                    List_shop_goods.DataSource = source;
+                }
+            }
+        }
+
+        private void categoryComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            selectedCategory = categoryComboBox.SelectedIndex;
+        }
+
+        private void categoryLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

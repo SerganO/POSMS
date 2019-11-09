@@ -8,6 +8,71 @@ namespace posmsLite
 {
     static class Converter
     {
+
+        
+
+        public static string GoodCategoryToString(GoodCategory category)
+        {
+            switch (category) {
+                case GoodCategory.Milk:
+                    return "Milk";
+                case GoodCategory.Bakery:
+                    return "Bakery";
+                case GoodCategory.HouseholdСhemicals:
+                    return "Household Сhemicals";
+                case GoodCategory.Meat:
+                    return "Meat";
+                case GoodCategory.Fish:
+                    return "Fish";
+                case GoodCategory.Cereals:
+                    return "Cereals";
+                case GoodCategory.Pasta:
+                    return "Pasta";
+                case GoodCategory.Fruit:
+                    return "Fruit";
+                case GoodCategory.Vegetables:
+                    return "Vegetables";
+                case GoodCategory.Grocery:
+                    return "Grocery";
+                default:
+                    return "N/A";
+            }
+
+
+        }
+
+        public static GoodCategory StringToGoodCategory(string category)
+        {
+            switch (category)
+            {
+                case "Milk":
+                    return GoodCategory.Milk;
+                case "Bakery":
+                    return GoodCategory.Bakery;
+                case "Household Сhemicals":
+                    return GoodCategory.HouseholdСhemicals;
+                case "Meat":
+                    return GoodCategory.Meat;
+                case "Fish":
+                    return GoodCategory.Fish;
+                case "Cereals":
+                    return GoodCategory.Cereals;
+                case "Pasta":
+                    return GoodCategory.Pasta;
+                case "Fruit":
+                    return GoodCategory.Fruit;
+                case "Vegetables":
+                    return GoodCategory.Vegetables;
+                case "Grocery":
+                    return GoodCategory.Grocery;
+                default:
+                   throw new ArgumentException();
+            }
+
+
+        }
+
+
         public static string RegionToString(Region region)
         {
             switch (region) {
@@ -80,7 +145,7 @@ namespace posmsLite
             List<GoodToShow> goods = new List<GoodToShow>();
             foreach(ShopGood good in shopGoods)
             {
-                goods.Add(new GoodToShow(good.Name, good.Count, good.SellPrice));
+                goods.Add(new GoodToShow(good.Name, good.Count, good.SellPrice, good.Category));
             }
 
             return goods;
@@ -91,7 +156,7 @@ namespace posmsLite
             List<AdminGood> goods = new List<AdminGood>();
             foreach (ShopGood good in shopGoods)
             {
-                goods.Add(new AdminGood{Name = good.Name, Buy = good.BuyPrice, Sell = good.SellPrice, count = good.Count});
+                goods.Add(new AdminGood{Name = good.Name, Buy = good.BuyPrice, Sell = good.SellPrice, count = good.Count, Category = Converter.GoodCategoryToString(good.Category)});
             }
 
             return goods;
@@ -102,7 +167,7 @@ namespace posmsLite
             List<GoodToShow> goods = new List<GoodToShow>();
             foreach (ProviderGood good in providerGoods)
             {
-                goods.Add(new GoodToShow(good.Name, good.Count, good.SellPrice));
+                goods.Add(new GoodToShow(good.Name, good.Count, good.SellPrice, good.Category));
             }
 
             return goods;

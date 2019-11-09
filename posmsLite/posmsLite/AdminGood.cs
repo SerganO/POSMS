@@ -11,11 +11,11 @@ namespace posmsLite
         public string Name { get; set; }
         public double Buy { get; set; }
         public double Sell { get; set; }
-
+        public string Category { get; set; }
         public int count;
         public ShopGood getGood()
         {
-            return new ShopGood { Name = Name, BuyPrice = Buy, SellPrice = Sell, Count = count };
+            return new ShopGood { Name = Name, BuyPrice = Buy, SellPrice = Sell, Count = count, Category = Converter.StringToGoodCategory(Category) };
 
         }
 

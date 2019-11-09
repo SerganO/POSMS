@@ -116,6 +116,26 @@ namespace posmsLite
             Orders = loaded.Orders;
             fileStream.Close();
         }
+        public string ShortInfo()
+        {
+            string res = "";
+            res += "Name: " + Name + Environment.NewLine;
+            res += "Region: " + Region + Environment.NewLine;
+            res += "UUID: " + UUID + Environment.NewLine;
+            res += "Users: " + Environment.NewLine;
+            var count = AccessBase.Count;
+            foreach (User user in Users)
+            {
+                res += count + " " + user + Environment.NewLine;
+                count++;
+            }
+            res += "Providers: " + Environment.NewLine;
+            foreach (Provider provider in Providers)
+            {
+                res += provider.Name + Environment.NewLine;
+            }
+            return res;
+        }
 
         public override string ToString()
         {
@@ -160,7 +180,8 @@ namespace posmsLite
                 BuyPrice = good.SellPrice,
                 Name = good.Name,
                 Count = good.Count,
-                SellPrice = good.SellPrice
+                SellPrice = good.SellPrice,
+                Category = good.Category
             };
             Goods.Add(shopGood);
         }

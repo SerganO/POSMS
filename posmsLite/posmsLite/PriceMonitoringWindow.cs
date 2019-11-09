@@ -33,7 +33,7 @@ namespace posmsLite
                     {
                         if(good.Name == goodName)
                         {
-                            goodsToShow.Add(new MonitoringGood { ShopName = shop.Name, good = new GoodToShow(good.Name, good.Count, good.SellPrice) });
+                            goodsToShow.Add(new MonitoringGood { ShopName = shop.Name, good = new GoodToShow(good.Name, good.Count, good.SellPrice, good.Category) });
                         }
                     }
                 }

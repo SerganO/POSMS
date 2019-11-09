@@ -27,6 +27,7 @@ namespace posmsLite
             good.Count = g.Count;
             good.SellPrice = g.SellPrice;
             good.BuyPrice = (r.Next() % 10000) / 100.0;
+            good.Category = g.Category;
             Thread.Sleep(10);
             return good;
         }

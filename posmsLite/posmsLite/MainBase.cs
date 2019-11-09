@@ -12,7 +12,10 @@ namespace posmsLite
     class MainBase
     {
         public static List<Shop> Shops = new List<Shop>();
-
+        public static int Count
+        {
+            get { return Shops.Count; }
+        }
         public static void Save()
         {
             FileStream fileStream = new FileStream("mainBase.txt", FileMode.Create);

@@ -33,6 +33,7 @@ namespace posmsLite
             good.Name = g.Name;
             good.Count = g.Count;
             good.SellPrice = (r.Next() % 15000) / 100.0;
+            good.Category = g.Category;
             Thread.Sleep(10);
             return good;
         }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace posmsLite
 {
@@ -20,10 +21,10 @@ namespace posmsLite
             MainBase.Load();
             AccessBase.Load();
 
-            //for (int i = 0; i < 100; i++)
+            //for (int i = 0; i < 2; i++)
             //{
 
-            //    Shop shop = Shop.randObject();
+            //    Shop shop = Shop.RandObject();
             //    MainBase.Shops.Add(shop);
 
             //    foreach (User user in shop.Users)
@@ -115,6 +116,35 @@ namespace posmsLite
             LoginManager.loginAsGuest();
             MainWindow mainWindow = new MainWindow();
             mainWindow.ShowDialog();
+        }
+
+        private void generateButton_Click(object sender, EventArgs e)
+        {
+            MainBase.Load();
+            AccessBase.Load();
+            generateProgreesBar.Value = 0;
+            string fileName = "shopInfo.txt";
+            FileStream aFile = new FileStream(fileName, FileMode.OpenOrCreate);
+            StreamWriter sw = new StreamWriter(aFile);
+            aFile.Seek(0, SeekOrigin.End);
+            generateProgreesBar.Maximum = 10;
+            for (int i = 0; i < 10; i++)
+            {
+
+                Shop shop = Shop.RandObject();
+                MainBase.Shops.Add(shop);
+                sw.WriteLine(MainBase.Count);
+                sw.WriteLine(shop.ShortInfo());
+                foreach (User user in shop.Users)
+                {
+                    AccessBase.AccessDict.Add(new Credentionals("login" + AccessBase.Count, "password" + AccessBase.Count), new Access(shop.UUID, user.UUID));
+                }
+
+                MainBase.Save();
+                AccessBase.Save();
+                generateProgreesBar.Value += 1;
+            }
+            sw.Close();
         }
     }
 }
