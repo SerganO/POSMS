@@ -6,7 +6,10 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:posms"
         mc:Ignorable="d"
-        Title="OrderGoods" Height="450" Width="800" MinHeight="450" MinWidth="800">
+        Title="OrderGoods" Height="450" Width="800" MinHeight="450" MinWidth="800" WindowStartupLocation="CenterScreen" Icon="Resources/sisense2-copy1.png">
+    <Window.Background>
+        <ImageBrush ImageSource="Resources/Background1-2.png"/>
+    </Window.Background>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition  Width="2*"></ColumnDefinition>
@@ -21,12 +24,12 @@
         </Grid.RowDefinitions>
 
         <DataGrid Grid.Column="0" Grid.Row="0"
-            x:Name="ListOrderGoods"
+            x:Name="ListOrderGoods" FontSize="26"
             Grid.ColumnSpan="4"
-  Margin="0 8 0 0"
+  Margin="20 10 20 0"
   ItemsSource="{Binding Items3}"
   CanUserSortColumns="True"
-  CanUserAddRows="False" SelectionChanged="ListOrderGoods_SelectionChanged">
+  CanUserAddRows="False" SelectionChanged="ListOrderGoods_SelectionChanged" Background="#FFCDD2CC">
             <!--<DataGrid.Columns>
                 <DataGridTextColumn Header="Name" Binding="{Binding nameGoods}"/>
                 <DataGridTextColumn Header="Price" Binding="{Binding goodPrices}"/>
@@ -40,7 +43,7 @@
         <Button HorizontalAlignment="Left"  VerticalAlignment="Center" Grid.Row="1" Grid.Column="0"
     Style="{StaticResource MaterialDesignRaisedDarkButton}"
     Width="100" Height="40" FontSize="26"
-    ToolTip="Back to Main Window" Margin="20,0,0,0" Click="Button_Click">
+    ToolTip="Back to Main Window" Margin="20,0,0,0" Click="Button_Click" Background="#FFE05500" BorderBrush="#FFE05500">
                 _Back
             </Button>
 
@@ -48,28 +51,20 @@
         <Button HorizontalAlignment="Right"  VerticalAlignment="Center" Grid.Row="1" Grid.Column="3"
     Style="{StaticResource MaterialDesignRaisedDarkButton}"
     Width="200" Height="40" FontSize="26"
-    ToolTip="Confirm order" Margin="0,0,20,0" Click="Button_Click_3">
+    ToolTip="Confirm order" Margin="0,0,20,0" Click="Button_Click_3" BorderBrush="#FF036E03" Background="#FF036E03">
                 _Confirm order
             </Button>
 
-        <!--<Button x:Name="Change_quantity_good" HorizontalAlignment="Center"  VerticalAlignment="Center" Grid.Row="1" Grid.Column="1"
-  Style="{StaticResource MaterialDesignFloatingActionLightButton}"
-  ToolTip="Change list order" Height="36" Width="36" Margin="0,0,0,0" Click="Button_Click_2">
-                <materialDesign:PackIcon
-    Kind="BorderColor"
-    Height="28"
-    Width="28" />
-            </Button>-->
 
         <ToggleButton x:Name="Change_quantity_good"  Height="36" Width="36" Margin="0,0,0,0" Click="Button_Click_2"
                        HorizontalAlignment="Center"  VerticalAlignment="Center" Grid.Row="1" Grid.Column="1"
-  Style="{StaticResource MaterialDesignActionToggleButton}"
+  Style="{StaticResource MaterialDesignActionToggleButton}" 
   ToolTip="Change list order" >
             <ToggleButton.Content>
                 <materialDesign:PackIcon
       Kind="BorderColor"
                     Width="28"
-                    Height="28"/>
+                    Height="28" Background="#FF00BCD4" BorderBrush="#FF00BCD4"/>
             </ToggleButton.Content>
             <materialDesign:ToggleButtonAssist.OnContent>
                 End Update
@@ -78,7 +73,7 @@
 
         <Button x:Name="Delete_good" HorizontalAlignment="Center"  VerticalAlignment="Center" Grid.Row="1" Grid.Column="1"
   Style="{StaticResource MaterialDesignFloatingActionLightButton}"
-  ToolTip="Delete good" Height="36" Width="36" Margin="100,0,0,0" Click="Delete_good_Click">
+  ToolTip="Delete good" Height="36" Width="36" Margin="100,0,0,0" Click="Delete_good_Click" BorderBrush="#FFE05500" Background="#FFE05500">
             <materialDesign:PackIcon
     Kind="Delete"
     Height="28"
@@ -86,12 +81,12 @@
         </Button>
 
         <TextBox x:Name="Price_all_goods" Grid.Row="1" Grid.Column="2" FontSize="24" VerticalAlignment="Center" 
-  materialDesign:HintAssist.Hint="All price"
+  materialDesign:HintAssist.Hint="All price" BorderBrush="#89118125" IsReadOnly="True"
   Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
 
         <Button x:Name="Add_good" HorizontalAlignment="Center"  VerticalAlignment="Center" Grid.Row="1" Grid.Column="1"
   Style="{StaticResource MaterialDesignFloatingActionLightButton}"
-  ToolTip="Add good" Height="36" Width="36" Margin="0,0,100,0" Click="Button_Click_1" >
+  ToolTip="Add good" Height="36" Width="36" Margin="0,0,100,0" Click="Button_Click_1" Background="#FF036E03" BorderBrush="#FF036E03" >
             <materialDesign:PackIcon
     Kind="CirclesAdd"
     Height="28"

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Програмирование\WPF\posms\posms\obj\Debug\
+D:\Программирование\POSMS\posms\posms\obj\Debug\
 posms
 none
 false
 DEBUG;TRACE
-D:\Програмирование\WPF\posms\posms\App.xaml
+D:\Программирование\POSMS\posms\posms\App.xaml
 8-1073167149
 
 32-11131392
-20250756436
+201838678614
 AddToOrder.xaml;LoginWindow.xaml;MainWindow.xaml;OrderGoods.xaml;Orders.xaml;PriceMonitoringWindow.xaml;SetPrices.xaml;ShopInfo.xaml;
 
-False
+True
 

@@ -6,7 +6,10 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:posms"
         mc:Ignorable="d"
-        Title="LoginWindow" Height="450" Width="800" ResizeMode="NoResize">
+        Title="LoginWindow" Height="450" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="Resources/sisense2-copy1.png">
+    <Window.Background>
+        <ImageBrush ImageSource="Resources/Background1-1.png" Stretch="Fill"/>
+    </Window.Background>
     <Grid>
         <!--<TextBox
   x:Name="NameTextBox"
@@ -23,29 +26,29 @@
               materialDesign:HintAssist.Hint="Password"  Height="60" Width="350" Password="" Margin="221,216,221,143" Background="AliceBlue" FontSize="24">
         </PasswordBox>-->
         <TextBox
-            x:Name="Name"
-             materialDesign:HintAssist.Hint="Name"
+            x:Name="Name" Background="#FFCED2CE"
+             materialDesign:HintAssist.Hint="Name" BorderBrush="#89118125"
              materialDesign:TextFieldAssist.TextBoxViewMargin="1 0 1 0"
              materialDesign:HintAssist.FloatingScale="0.6"
              Style="{StaticResource MaterialDesignFloatingHintTextBox}"
-             FontSize="24" Width="350"  Background="AliceBlue" 
-            VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,0,70"/>
+             FontSize="24" Width="350"   
+            VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,0,70" CaretBrush="#FF1C8D26" SelectionBrush="#FF218D39"/>
 
         <PasswordBox
              x:Name="Password" 
-             materialDesign:HintAssist.Hint="Password" materialDesign:HintAssist.FloatingScale="0.6" Width="350" Password=""  Background="AliceBlue" FontSize="24"
-             Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" 
-            VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,100,0,0">
+             materialDesign:HintAssist.Hint="Password" materialDesign:HintAssist.FloatingScale="0.6" Width="350" Password=""  Background="#FFCED2CE" FontSize="24"
+             Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" BorderBrush="#89118125"
+            VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,100,0,0" CaretBrush="#FF1C8D26" SelectionBrush="#FF218D39"> 
         </PasswordBox>
 
         <Button
              Style="{StaticResource MaterialDesignRaisedLightButton}"
-             ToolTip="Log in as a registered user" Margin="145,330,495,36" Height="Auto" FontSize="24" Click="Click_employee" >
+             ToolTip="Log in as a registered user" Margin="145,330,495,36" Height="Auto" FontSize="24" Click="Click_employee" Background="#FF0C7106" BorderBrush="#FF0C7106" >
                  _Employee
         </Button>
         <Button
              Style="{StaticResource MaterialDesignRaisedDarkButton}"
-             ToolTip="Log in as a guest" Margin="499,330,151,36" Height="Auto" Width="Auto" FontSize="24" Click="Click_guest" >
+             ToolTip="Log in as a guest" Margin="499,330,151,36" Height="Auto" Width="Auto" FontSize="24" Click="Click_guest" Background="#FFE05900" BorderBrush="#FFE05900" >
                   _Guest
         </Button>
 

@@ -6,7 +6,10 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:posms"
         mc:Ignorable="d"
-        Title="MainWindow" MinHeight="800" MinWidth="1024" Height="800" Width="1024">
+        Title="MainWindow" MinHeight="800" MinWidth="1024" Height="800" Width="1024" WindowStartupLocation="CenterScreen" Icon="Resources/sisense2-copy1.png" >
+    <Window.Background>
+        <ImageBrush ImageSource="Resources/Background1-1.png"/>
+    </Window.Background>
 
 
     <Grid>
@@ -226,8 +229,8 @@
         </TreeView>
 
         <ComboBox x:Name="List_Region" Grid.Column="2" Grid.Row="0" Grid.RowSpan="2"
-  materialDesign:HintAssist.Hint="Region" 
-  Style="{StaticResource MaterialDesignFloatingHintComboBox}" FontSize="24" Margin="0,280,0,126" SelectionChanged="List_Region_SelectionChanged">
+  materialDesign:HintAssist.Hint="Region"  BorderBrush="#89118125"
+  Style="{StaticResource MaterialDesignFloatingHintComboBox}" FontSize="24" Margin="0,280,0,126" SelectionChanged="List_Region_SelectionChanged" Background="#FFCED2CE">
             <ComboBoxItem>
                 Lutsk
             </ComboBoxItem>
@@ -308,23 +311,23 @@
 
 
         <ComboBox x:Name="List_Shop" Grid.Column="2" Grid.Row="1" Grid.RowSpan="2"
-  materialDesign:HintAssist.Hint="Shop"
-  Style="{StaticResource MaterialDesignFloatingHintComboBox}" FontSize="24" Margin="0,126" SelectionChanged="List_Shop_SelectionChanged">
+  materialDesign:HintAssist.Hint="Shop" Background="#FFCED2CE"  BorderBrush="#89118125"
+  Style="{StaticResource MaterialDesignFloatingHintComboBox}" FontSize="24" Margin="0,60,0,0" SelectionChanged="List_Shop_SelectionChanged">
         </ComboBox>
 
         <TextBlock Grid.Column="2" Grid.Row="0" FontSize="36" Margin="0,160,0,0" HorizontalAlignment="Center" >Search</TextBlock>
 
-        <Button x:Name="Search_in_database" Grid.Column="2" Grid.Row="2" Margin="94,102,94,12"
+        <Button x:Name="Search_in_database" Grid.Column="2" Grid.Row="2" VerticalAlignment="Bottom" HorizontalAlignment="Center"
     Style="{StaticResource MaterialDesignRaisedDarkButton}"
-    Width="150" Height="40" FontSize="24"
-    ToolTip="Show products in store" Click="Search_in_database_Click">
+    Width="200" Height="60" FontSize="28"
+    ToolTip="Show products in store" Click="Search_in_database_Click" Background="#FF0C7106" BorderBrush="#FF0C7106">
             _Search
         </Button>
 
         <Button x:Name="Price_monitoring" Grid.Column="3" Grid.Row="3" Margin="0,0,0,0"
     Style="{StaticResource MaterialDesignRaisedDarkButton}"
-    Width="220" Height="40" FontSize="24"
-    ToolTip="Show products in store" Click="Price_monitoring_Click">
+    Width="250" Height="60" FontSize="28"
+    ToolTip="Show products in store" Click="Price_monitoring_Click" Background="#FFE05900" BorderBrush="#FFE05900">
             _Price monitoring
         </Button>
     </Grid>

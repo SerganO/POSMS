@@ -6,12 +6,16 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:posms"
         mc:Ignorable="d"
-        Title="ShopInfo" Height="600" Width="800" MinHeight="600" MinWidth="800">
+        Title="ShopInfo" Height="600" Width="800" MinHeight="600" MinWidth="800" WindowStartupLocation="CenterScreen" Icon="Resources/sisense2-copy1.png">
+    <Window.Background>
+        <ImageBrush ImageSource="Resources/Background1-2.png"/>
+    </Window.Background>
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+            <ColumnDefinition Width="85*"/>
+            <ColumnDefinition Width="88*"></ColumnDefinition>
+            <ColumnDefinition Width="88*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
@@ -19,7 +23,7 @@
             <RowDefinition Height="8*"></RowDefinition>
         </Grid.RowDefinitions>
 
-        <StackPanel Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <StackPanel Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Top"  Grid.RowSpan="2">
             <TextBlock x:Name="ShopName" FontSize="42" Margin="0,10,0,0">
             Shop name
             </TextBlock>
@@ -32,14 +36,14 @@
         <DataGrid
             x:Name="ListShopGoods"
             Grid.ColumnSpan="3" Grid.Row="1"
-  Margin="0 8 0 0"
+  Margin="11.062,10,20,20" FontSize="26"
   ItemsSource="{Binding Items3}"
   CanUserSortColumns="True"
-  CanUserAddRows="False" IsReadOnly="True"/>
+  CanUserAddRows="False" IsReadOnly="True" Grid.Column="1" Background="#FFCDD2CC"/>
 
-        <ComboBox x:Name="CategoryProducts" Grid.Column="1" Grid.Row="0" Margin="0,0,0,0" VerticalAlignment="Bottom"
-  materialDesign:HintAssist.Hint="Categoty" FontSize="24"
-  Style="{StaticResource MaterialDesignFloatingHintComboBox}" SelectionChanged="CategoryProducts_SelectionChanged">
+        <ComboBox x:Name="CategoryProducts" Grid.Column="2" Grid.Row="0" Margin="0,0,0,0" VerticalAlignment="Bottom"
+  materialDesign:HintAssist.Hint="Categoty" FontSize="24" BorderBrush="#89118125"
+  Style="{StaticResource MaterialDesignFloatingHintComboBox}" SelectionChanged="CategoryProducts_SelectionChanged" Background="#FFCDD2CC">
             <ComboBoxItem>
                 All
             </ComboBoxItem>
@@ -75,21 +79,21 @@
             </ComboBoxItem>
         </ComboBox>
 
-        <Button Grid.Column="2" Grid.Row="0"
+        <Button Grid.Column="3" Grid.Row="0"
   Style="{StaticResource MaterialDesignFloatingActionLightButton}"
-  ToolTip="Search category products" Height="36" Width="36" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="10,0,0,0" Click="Button_Click_1">
+  ToolTip="Search category products" Height="36" Width="36" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="10,0,0,0" Click="Button_Click_1" Background="#FF036E03" BorderBrush="#FF036E03">
             <materialDesign:PackIcon
     Kind="Search"
     Height="28"
     Width="28" />
         </Button>
 
-        <Button Grid.Column="2" Grid.Row="0"
+        <Button Grid.Column="3" Grid.Row="0"
     Style="{StaticResource MaterialDesignRaisedDarkButton}"
     Width="100" Height="40" FontSize="26"
-    ToolTip="Back to Main Window" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,10,10,0" Click="Button_Click">
+    ToolTip="Back to Main Window" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,10,10,0" Click="Button_Click" BorderBrush="#FFE05500" Background="#FFE05500">
             _Back
         </Button>
-        
+
     </Grid>
 </Window>

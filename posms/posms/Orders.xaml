@@ -6,7 +6,10 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:posms"
         mc:Ignorable="d"
-        Title="Orders" Height="600" Width="600" ResizeMode="NoResize">
+        Title="Orders" Height="600" Width="600" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="Resources/sisense2-copy1.png">
+    <Window.Background>
+        <ImageBrush ImageSource="Resources/Background1-1.png"/>
+    </Window.Background>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"></RowDefinition>
@@ -16,34 +19,34 @@
         </Grid.RowDefinitions>
 
         <ComboBox x:Name="Orders_list" Grid.Row="1"
-  materialDesign:HintAssist.Hint="Orders"
-  Style="{StaticResource MaterialDesignFloatingHintComboBox}" FontSize="24" VerticalAlignment="Bottom" Margin="20,0,20,10" SelectionChanged="Orders_list_SelectionChanged">
+  materialDesign:HintAssist.Hint="Orders" BorderBrush="#89118125"
+  Style="{StaticResource MaterialDesignFloatingHintComboBox}" FontSize="24" VerticalAlignment="Bottom" Margin="20,0,20,10" SelectionChanged="Orders_list_SelectionChanged" Background="#FFCED2CE">
         </ComboBox>
 
         <CheckBox x:Name="Only_not_delivered_checked" Grid.Row="0"
-    Style="{StaticResource MaterialDesignCheckBox}" FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,20,0" Click="CheckBox_Checked">
+    Style="{StaticResource MaterialDesignCheckBox}" FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,20,0" Click="CheckBox_Checked" Background="#FFFAD003" BorderBrush="#FFFAD003">
             Only Not Delivered
         </CheckBox>
 
         <Button Grid.Row="0"
     Style="{StaticResource MaterialDesignRaisedDarkButton}"
     Width="100" Height="40" FontSize="26"
-    ToolTip="Back to Main Window" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,10,0,0" Click="Button_Click">
+    ToolTip="Back to Main Window" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,10,0,0" Click="Button_Click" Background="#FFE05900" BorderBrush="#FFE05900">
             _Back
         </Button>
         
         <DataGrid
             x:Name="ListOrders"
            Grid.Row="2"
-  Margin="0 8 0 0"
+  Margin="20 10 20 0" FontSize="26"
   ItemsSource="{Binding Items3}"
   CanUserSortColumns="True"
-  CanUserAddRows="False" />
+  CanUserAddRows="False" Background="#FFCED2CE" />
 
         <Button Grid.Row="3"
     Style="{StaticResource MaterialDesignRaisedDarkButton}"
     Width="150" Height="40" FontSize="26"
-    ToolTip="Confirm good" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Button_Click_1">
+    ToolTip="Confirm good" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Button_Click_1" BorderBrush="#FF0C7106" Background="#FF0C7106">
             _Confirm
         </Button>
 

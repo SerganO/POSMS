@@ -6,7 +6,10 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:posms"
         mc:Ignorable="d"
-        Title="AddToOrder" MinHeight="450" MinWidth="450" Height="450" Width="450" ResizeMode="NoResize">
+        Title="AddToOrder" MinHeight="450" MinWidth="450" Height="450" Width="450" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="Resources/sisense2-copy1.png">
+    <Window.Background>
+        <ImageBrush ImageSource="Resources/Background1-2.png"/>
+    </Window.Background>
     <Grid>
 
         <Grid.RowDefinitions>
@@ -18,30 +21,30 @@
 
 
         <ComboBox x:Name="Provider_list" Grid.Row="0"
-  materialDesign:HintAssist.Hint="Provider"
+  materialDesign:HintAssist.Hint="Provider" Background="#FFCDD2CC" BorderBrush="#FFCDD2CC"
   Style="{StaticResource MaterialDesignFloatingHintComboBox}" FontSize="24" VerticalAlignment="Bottom" Margin="20,0,20,10" SelectionChanged="Provider_list_SelectionChanged">
         </ComboBox>
 
         <ComboBox x:Name="Good_list" Grid.Row="1"
-  materialDesign:HintAssist.Hint="Good"
+  materialDesign:HintAssist.Hint="Good" Background="#FFCDD2CC" BorderBrush="#89118125"
   Style="{StaticResource MaterialDesignFloatingHintComboBox}" FontSize="24" VerticalAlignment="Bottom" Margin="20,0,20,10" SelectionChanged="Good_list_SelectionChanged">
         </ComboBox>
 
-        <TextBox  x:Name="Count_good"
+        <TextBox  x:Name="Count_good" Background="#FFCDD2CC" BorderBrush="#89118125"
   materialDesign:HintAssist.Hint="Quantity" Margin="20,0,20,10" Grid.Row="2" VerticalAlignment="Bottom"
   Style="{StaticResource MaterialDesignFloatingHintTextBox}"  FontSize="24" />
 
         <Button Grid.Row="0"
     Style="{StaticResource MaterialDesignRaisedDarkButton}"
     Width="100" Height="40" FontSize="26"
-    ToolTip="Back to Main Window" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,10,0,0" Click="Button_Click">
+    ToolTip="Back to Main Window" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,10,0,0" Click="Button_Click" Background="#FFE05500" BorderBrush="#FFE05500">
             _Back
         </Button>
 
         <Button Grid.Row="3"
     Style="{StaticResource MaterialDesignRaisedDarkButton}"
-    Width="150" Height="40" FontSize="26"
-    ToolTip="Confirm good" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Button_Click_1">
+    Width="150" Height="50" FontSize="28"
+    ToolTip="Confirm good" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Button_Click_1" Background="#FF036E03" BorderBrush="#FF036E03">
             _Confirm
         </Button>
 

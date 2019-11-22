@@ -6,7 +6,10 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:posms"
         mc:Ignorable="d"
-        Title="SetPrices" Height="600" Width="800" MinHeight="600" MinWidth="800">
+        Title="SetPrices" Height="600" Width="800" MinHeight="600" MinWidth="800" WindowStartupLocation="CenterScreen" Icon="Resources/sisense2-copy1.png">
+    <Window.Background>
+        <ImageBrush ImageSource="Resources/Background1-2.png"/>
+    </Window.Background>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"></ColumnDefinition>
@@ -21,18 +24,18 @@
 
 
         <DataGrid
-            x:Name="ListShopGoods"
+            x:Name="ListShopGoods" 
             Grid.ColumnSpan="3" Grid.Row="1"
-  Margin="0 8 0 0"
+  Margin="20 10 20 20" FontSize="26"
   ItemsSource="{Binding Items3}"
   CanUserSortColumns="True"
-  CanUserAddRows="False">
-           
+  CanUserAddRows="False" Background="#FFCDD2CC"> 
+
         </DataGrid>
 
         <ComboBox x:Name="CategoryProducts" Grid.Column="1" Grid.Row="0" Margin="0,0,0,0" VerticalAlignment="Bottom"
-  materialDesign:HintAssist.Hint="Categoty" FontSize="24"
-  Style="{StaticResource MaterialDesignFloatingHintComboBox}" SelectionChanged="CategoryProducts_SelectionChanged" >
+  materialDesign:HintAssist.Hint="Categoty" FontSize="24" Background="#FFCDD2CC" 
+  Style="{StaticResource MaterialDesignFloatingHintComboBox}" SelectionChanged="CategoryProducts_SelectionChanged" BorderBrush="#89118125" >
             <ComboBoxItem>
                 All
             </ComboBoxItem>
@@ -70,7 +73,7 @@
 
         <Button x:Name="Search" Grid.Column="2" Grid.Row="0"
   Style="{StaticResource MaterialDesignFloatingActionLightButton}"
-  ToolTip="Search category products" Height="36" Width="36" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,78,0,0" Click="Search_Click" >
+  ToolTip="Search category products" Height="36" Width="36" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="20,0,0,10" Click="Search_Click" Background="#FF036E03" BorderBrush="#FF036E03" >
             <materialDesign:PackIcon
     Kind="Search"
     Height="28"
@@ -80,14 +83,14 @@
         <Button x:Name="Back_in_main_window" Grid.Column="2" Grid.Row="0"
     Style="{StaticResource MaterialDesignRaisedDarkButton}"
     Width="100" Height="40" FontSize="26"
-    ToolTip="Back to Main Window" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,10,10,0" Click="Button_Click">
+    ToolTip="Back to Main Window" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,10,10,0" Click="Button_Click" Background="#FFE05500" BorderBrush="#FFE05500">
             _Back
         </Button>
 
         <Button x:Name="Update_prices" Grid.Column="0" Grid.Row="0"
     Style="{StaticResource MaterialDesignRaisedDarkButton}"
-    Width="120" Height="40" FontSize="26"
-    ToolTip="Update set prices" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,10,10,0" Click="Button_Click_1" >
+    Width="200" Height="40" FontSize="26"
+    ToolTip="Update set prices" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0,0,20,10" Click="Button_Click_1" Background="#FFF6BB00" BorderBrush="#FFF6BB00" >
             _Update
         </Button>
     </Grid>
