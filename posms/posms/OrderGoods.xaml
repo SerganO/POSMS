@@ -1,0 +1,102 @@
+﻿<Window x:Class="posms.OrderGoods"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:posms"
+        mc:Ignorable="d"
+        Title="OrderGoods" Height="450" Width="800" MinHeight="450" MinWidth="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition  Width="2*"></ColumnDefinition>
+            <ColumnDefinition  Width="3*"></ColumnDefinition>
+            <ColumnDefinition  Width="2*"></ColumnDefinition>
+            <ColumnDefinition  Width="3*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="8.5*"></RowDefinition>
+            <RowDefinition Height="1.5*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <DataGrid Grid.Column="0" Grid.Row="0"
+            x:Name="ListOrderGoods"
+            Grid.ColumnSpan="4"
+  Margin="0 8 0 0"
+  ItemsSource="{Binding Items3}"
+  CanUserSortColumns="True"
+  CanUserAddRows="False" SelectionChanged="ListOrderGoods_SelectionChanged">
+            <!--<DataGrid.Columns>
+                <DataGridTextColumn Header="Name" Binding="{Binding nameGoods}"/>
+                <DataGridTextColumn Header="Price" Binding="{Binding goodPrices}"/>
+                <DataGridCheckBoxColumn Header="Count" Binding="{Binding countGoods}"/>
+            </DataGrid.Columns>-->
+            
+        </DataGrid>
+
+
+
+        <Button HorizontalAlignment="Left"  VerticalAlignment="Center" Grid.Row="1" Grid.Column="0"
+    Style="{StaticResource MaterialDesignRaisedDarkButton}"
+    Width="100" Height="40" FontSize="26"
+    ToolTip="Back to Main Window" Margin="20,0,0,0" Click="Button_Click">
+                _Back
+            </Button>
+
+
+        <Button HorizontalAlignment="Right"  VerticalAlignment="Center" Grid.Row="1" Grid.Column="3"
+    Style="{StaticResource MaterialDesignRaisedDarkButton}"
+    Width="200" Height="40" FontSize="26"
+    ToolTip="Confirm order" Margin="0,0,20,0" Click="Button_Click_3">
+                _Confirm order
+            </Button>
+
+        <!--<Button x:Name="Change_quantity_good" HorizontalAlignment="Center"  VerticalAlignment="Center" Grid.Row="1" Grid.Column="1"
+  Style="{StaticResource MaterialDesignFloatingActionLightButton}"
+  ToolTip="Change list order" Height="36" Width="36" Margin="0,0,0,0" Click="Button_Click_2">
+                <materialDesign:PackIcon
+    Kind="BorderColor"
+    Height="28"
+    Width="28" />
+            </Button>-->
+
+        <ToggleButton x:Name="Change_quantity_good"  Height="36" Width="36" Margin="0,0,0,0" Click="Button_Click_2"
+                       HorizontalAlignment="Center"  VerticalAlignment="Center" Grid.Row="1" Grid.Column="1"
+  Style="{StaticResource MaterialDesignActionToggleButton}"
+  ToolTip="Change list order" >
+            <ToggleButton.Content>
+                <materialDesign:PackIcon
+      Kind="BorderColor"
+                    Width="28"
+                    Height="28"/>
+            </ToggleButton.Content>
+            <materialDesign:ToggleButtonAssist.OnContent>
+                End Update
+            </materialDesign:ToggleButtonAssist.OnContent>
+        </ToggleButton>
+
+        <Button x:Name="Delete_good" HorizontalAlignment="Center"  VerticalAlignment="Center" Grid.Row="1" Grid.Column="1"
+  Style="{StaticResource MaterialDesignFloatingActionLightButton}"
+  ToolTip="Delete good" Height="36" Width="36" Margin="100,0,0,0" Click="Delete_good_Click">
+            <materialDesign:PackIcon
+    Kind="Delete"
+    Height="28"
+    Width="28" />
+        </Button>
+
+        <TextBox x:Name="Price_all_goods" Grid.Row="1" Grid.Column="2" FontSize="24" VerticalAlignment="Center" 
+  materialDesign:HintAssist.Hint="All price"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+
+        <Button x:Name="Add_good" HorizontalAlignment="Center"  VerticalAlignment="Center" Grid.Row="1" Grid.Column="1"
+  Style="{StaticResource MaterialDesignFloatingActionLightButton}"
+  ToolTip="Add good" Height="36" Width="36" Margin="0,0,100,0" Click="Button_Click_1" >
+            <materialDesign:PackIcon
+    Kind="CirclesAdd"
+    Height="28"
+    Width="28" />
+        </Button>
+        
+    </Grid>
+</Window>

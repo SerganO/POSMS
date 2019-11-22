@@ -1,0 +1,51 @@
+﻿<Window x:Class="posms.Orders"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:posms"
+        mc:Ignorable="d"
+        Title="Orders" Height="600" Width="600" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1.5*"></RowDefinition>
+            <RowDefinition Height="6*"></RowDefinition>
+            <RowDefinition Height="1.5*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <ComboBox x:Name="Orders_list" Grid.Row="1"
+  materialDesign:HintAssist.Hint="Orders"
+  Style="{StaticResource MaterialDesignFloatingHintComboBox}" FontSize="24" VerticalAlignment="Bottom" Margin="20,0,20,10" SelectionChanged="Orders_list_SelectionChanged">
+        </ComboBox>
+
+        <CheckBox x:Name="Only_not_delivered_checked" Grid.Row="0"
+    Style="{StaticResource MaterialDesignCheckBox}" FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,20,0" Click="CheckBox_Checked">
+            Only Not Delivered
+        </CheckBox>
+
+        <Button Grid.Row="0"
+    Style="{StaticResource MaterialDesignRaisedDarkButton}"
+    Width="100" Height="40" FontSize="26"
+    ToolTip="Back to Main Window" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,10,0,0" Click="Button_Click">
+            _Back
+        </Button>
+        
+        <DataGrid
+            x:Name="ListOrders"
+           Grid.Row="2"
+  Margin="0 8 0 0"
+  ItemsSource="{Binding Items3}"
+  CanUserSortColumns="True"
+  CanUserAddRows="False" />
+
+        <Button Grid.Row="3"
+    Style="{StaticResource MaterialDesignRaisedDarkButton}"
+    Width="150" Height="40" FontSize="26"
+    ToolTip="Confirm good" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Button_Click_1">
+            _Confirm
+        </Button>
+
+    </Grid>
+</Window>

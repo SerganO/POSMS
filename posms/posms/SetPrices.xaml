@@ -1,0 +1,103 @@
+﻿<Window x:Class="posms.SetPrices"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:posms"
+        mc:Ignorable="d"
+        Title="SetPrices" Height="600" Width="800" MinHeight="600" MinWidth="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="8*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock x:Name="ShopName" FontSize="42" Margin="0,10,0,0">
+            Shop name
+            </TextBlock>
+
+            <TextBlock x:Name="ShopRegionInfo" FontSize="26" Margin="0,20,0,0">
+            Shop region Info
+            </TextBlock>
+        </StackPanel>
+
+        <DataGrid
+            x:Name="ListShopGoods"
+            Grid.ColumnSpan="3" Grid.Row="1"
+  Margin="0 8 0 0"
+  ItemsSource="{Binding Items3}"
+  CanUserSortColumns="True"
+  CanUserAddRows="False">
+           
+        </DataGrid>
+
+        <ComboBox x:Name="CategoryProducts" Grid.Column="1" Grid.Row="0" Margin="0,0,0,0" VerticalAlignment="Bottom"
+  materialDesign:HintAssist.Hint="Categoty" FontSize="24"
+  Style="{StaticResource MaterialDesignFloatingHintComboBox}" SelectionChanged="CategoryProducts_SelectionChanged" >
+            <ComboBoxItem>
+                All
+            </ComboBoxItem>
+            <ComboBoxItem>
+                Milk
+            </ComboBoxItem>
+            <ComboBoxItem>
+                Bakery
+            </ComboBoxItem>
+            <ComboBoxItem>
+                Household Сhemicals
+            </ComboBoxItem>
+            <ComboBoxItem>
+                Meat
+            </ComboBoxItem>
+            <ComboBoxItem>
+                Fish
+            </ComboBoxItem>
+            <ComboBoxItem>
+                Cereals
+            </ComboBoxItem>
+            <ComboBoxItem>
+                Pasta
+            </ComboBoxItem>
+            <ComboBoxItem>
+                Fruit
+            </ComboBoxItem>
+            <ComboBoxItem>
+                Vegetables
+            </ComboBoxItem>
+            <ComboBoxItem>
+                Grocery
+            </ComboBoxItem>
+        </ComboBox>
+
+        <Button x:Name="Search" Grid.Column="2" Grid.Row="0"
+  Style="{StaticResource MaterialDesignFloatingActionLightButton}"
+  ToolTip="Search category products" Height="36" Width="36" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,78,0,0" Click="Search_Click" >
+            <materialDesign:PackIcon
+    Kind="Search"
+    Height="28"
+    Width="28" />
+        </Button>
+
+        <Button x:Name="Back_in_main_window" Grid.Column="2" Grid.Row="0"
+    Style="{StaticResource MaterialDesignRaisedDarkButton}"
+    Width="100" Height="40" FontSize="26"
+    ToolTip="Back to Main Window" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,10,10,0" Click="Button_Click">
+            _Back
+        </Button>
+
+        <Button x:Name="Update_prices" Grid.Column="2" Grid.Row="0"
+    Style="{StaticResource MaterialDesignRaisedDarkButton}"
+    Width="120" Height="40" FontSize="26"
+    ToolTip="Update set prices" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,10,0,0" Click="Button_Click_1" >
+            _Update
+        </Button>
+    </Grid>
+</Window>

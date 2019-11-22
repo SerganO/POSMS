@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.705
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "posms", "posms\posms.csproj", "{B03BD5F5-0E8D-42BE-94E4-E19923C54E1D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B03BD5F5-0E8D-42BE-94E4-E19923C54E1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B03BD5F5-0E8D-42BE-94E4-E19923C54E1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B03BD5F5-0E8D-42BE-94E4-E19923C54E1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B03BD5F5-0E8D-42BE-94E4-E19923C54E1D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {580A9321-5DBB-4AF1-9B70-62064EA53BD0}
+	EndGlobalSection
+EndGlobal
