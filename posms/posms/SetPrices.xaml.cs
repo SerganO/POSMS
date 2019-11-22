@@ -34,17 +34,16 @@ namespace posms
                 Update_prices.IsEnabled = false;
                 
             }
-            try
-            {
-                ListShopGoods.Columns[0].IsReadOnly = true;
-                ListShopGoods.Columns[1].IsReadOnly = true;
-                ListShopGoods.Columns[2].IsReadOnly = true;
-                ListShopGoods.Columns[3].IsReadOnly = true;
-            }
-            catch
-            { }
+            ListShopGoods.IsReadOnly = true;
         }
 
+        void Set_Read_status(bool b)
+        {
+            ListShopGoods.Columns[0].IsReadOnly = true;
+            ListShopGoods.Columns[1].IsReadOnly = true;
+            ListShopGoods.Columns[2].IsReadOnly = b;
+            ListShopGoods.Columns[3].IsReadOnly = true;
+        }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Close();
@@ -54,6 +53,8 @@ namespace posms
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
+            ListShopGoods.IsReadOnly = false;
+            Set_Read_status(true);
             if (updating)
             {
                 if (saveChange())
@@ -63,6 +64,7 @@ namespace posms
                     CategoryProducts.IsEnabled = true;
                     Back_in_main_window.IsEnabled = true;
                     Search.IsEnabled = true;
+                    ListShopGoods.IsReadOnly = false;
                     ListShopGoods.Columns[2].IsReadOnly = true;
                 }
             }
@@ -134,8 +136,9 @@ namespace posms
                 LoginManager.CurrentShop.Goods.Add(good.getGood());
             }
             MainBase.Save();
-            ListShopGoods.SelectedItem = ListShopGoods.Items[0];
-            ListShopGoods.ScrollIntoView(ListShopGoods.SelectedItem);
+           // ListShopGoods.SelectedItem = ListShopGoods.Items[0];
+           // ListShopGoods.UpdateLayout();
+            //ListShopGoods.ScrollIntoView(ListShopGoods.SelectedItem);
         }
 
         void updateUI()
