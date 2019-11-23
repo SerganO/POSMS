@@ -27,11 +27,11 @@
 
         <ComboBox x:Name="Good_list" Grid.Row="1"
   materialDesign:HintAssist.Hint="Good" Background="#FFCDD2CC" BorderBrush="#89118125"
-  Style="{StaticResource MaterialDesignFloatingHintComboBox}" FontSize="24" VerticalAlignment="Bottom" Margin="20,0,20,10" SelectionChanged="Good_list_SelectionChanged">
+  Style="{StaticResource MaterialDesignFloatingHintComboBox}" FontSize="24" VerticalAlignment="Center" Margin="20,0,20,10" SelectionChanged="Good_list_SelectionChanged">
         </ComboBox>
 
         <TextBox  x:Name="Count_good" Background="#FFCDD2CC" BorderBrush="#89118125"
-  materialDesign:HintAssist.Hint="Quantity" Margin="20,0,20,10" Grid.Row="2" VerticalAlignment="Bottom"
+  materialDesign:HintAssist.Hint="Quantity" Margin="20,0,20,10" Grid.Row="2" VerticalAlignment="Center"
   Style="{StaticResource MaterialDesignFloatingHintTextBox}"  FontSize="24" />
 
         <Button Grid.Row="0"

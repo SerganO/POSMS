@@ -11,20 +11,7 @@
         <ImageBrush ImageSource="Resources/Background1-1.png" Stretch="Fill"/>
     </Window.Background>
     <Grid>
-        <!--<TextBox
-  x:Name="NameTextBox"
- materialDesign:HintAssist.Hint="Name" Height="60" Width="350" Margin="221,116,221,243" Background="AliceBlue" FontSize="24"  >
-            <TextBox.Text>
-                <Binding
-                    Path="Name"
-                    UpdateSourceTrigger="PropertyChanged" >
-                </Binding>
-            </TextBox.Text>
-        </TextBox>-->
-        <!--<PasswordBox
-              x:Name="PasswordBox"
-              materialDesign:HintAssist.Hint="Password"  Height="60" Width="350" Password="" Margin="221,216,221,143" Background="AliceBlue" FontSize="24">
-        </PasswordBox>-->
+      
         <TextBox
             x:Name="Name" Background="#FFCED2CE"
              materialDesign:HintAssist.Hint="Name" BorderBrush="#89118125"
@@ -32,13 +19,13 @@
              materialDesign:HintAssist.FloatingScale="0.6"
              Style="{StaticResource MaterialDesignFloatingHintTextBox}"
              FontSize="24" Width="350"   
-            VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,0,70" CaretBrush="#FF1C8D26" SelectionBrush="#FF218D39"/>
+            VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,0,50" CaretBrush="#FF1C8D26" SelectionBrush="#FF218D39"/>
 
         <PasswordBox
              x:Name="Password" 
              materialDesign:HintAssist.Hint="Password" materialDesign:HintAssist.FloatingScale="0.6" Width="350" Password=""  Background="#FFCED2CE" FontSize="24"
              Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" BorderBrush="#89118125"
-            VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,100,0,0" CaretBrush="#FF1C8D26" SelectionBrush="#FF218D39"> 
+            VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,117,0,0" CaretBrush="#FF1C8D26" SelectionBrush="#FF218D39"> 
         </PasswordBox>
 
         <Button

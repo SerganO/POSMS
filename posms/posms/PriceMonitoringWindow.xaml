@@ -103,7 +103,7 @@
 
         </ComboBox>
 
-        <DataGrid
+        <DataGrid IsReadOnly="True"
             x:Name="ListShopGoods"
             Grid.ColumnSpan="3" Grid.Row="1"
   Margin="20 10 20 20" FontSize="26"
